@@ -88,7 +88,7 @@ function renderWelcome() {
     <section class="panel welcome-panel">
       <div class="eyebrow">BIOB90 group formation</div>
       <h1>Tell Us About YOU Survey</h1>
-      <p class="lead">Complete a short Avengers teamwork activity, record your meeting preferences, rank five biology topics, and rank three ways of investigating a topic. Your responses will be used to form project groups.</p>
+      <p class="lead">Your responses will help us form compatible project groups around shared interests.</p>
       <ol class="welcome-steps"><li>Complete the Avengers teamwork activity.</li><li>Record your meeting preferences.</li><li>Choose and rank five topics.</li><li>Rank the three project streams and submit.</li></ol>
       <form id="identity-form" class="form-card">
         <h2>Begin or resume</h2>
