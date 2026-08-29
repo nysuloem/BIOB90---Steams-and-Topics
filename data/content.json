@@ -6,10 +6,16 @@
       "shortTitle": "Two-Eyed Seeing",
       "description": "Bring the strengths of Indigenous ways of knowing and Western biological science into respectful dialogue, using both together to develop a fuller understanding of the topic.",
       "details": "Consider what each knowledge system reveals, where their insights meet or differ, and how learning from both could inform action. Use Indigenous-authored or community-grounded sources wherever possible, keep knowledge connected to its people and place, and respect community protocols and restrictions.",
-      "video": {
-        "label": "Two-Eyed Seeing: a short introduction (11:30)",
-        "url": "https://www.youtube.com/watch?v=2MAp90YC510"
-      }
+      "videos": [
+        {
+          "label": "Short introduction: Two-Eyed Seeing in ecological research (5 min)",
+          "url": "https://www.youtube.com/watch?v=3LI9roIYyhE"
+        },
+        {
+          "label": "Deeper exploration with Elder Dr. Albert Marshall",
+          "url": "https://www.youtube.com/watch?v=pJcjf1nUckc"
+        }
+      ]
     },
     {
       "id": "toronto-zoo",
@@ -17,10 +23,12 @@
       "shortTitle": "Toronto Zoo",
       "description": "Examine the topic by comparing at least three distinct plant and/or animal groups.",
       "details": "Ask how differences and similarities in anatomy, physiology, behaviour, ecology, evolutionary history, or relationships with people shape the patterns you find. Toronto Zoo organisms and conservation programs may provide useful cases, but the topic does not have to be limited to zoo husbandry.",
-      "video": {
-        "label": "Comparative anatomy: what comparisons reveal",
-        "url": "https://www.youtube.com/watch?v=7ABSjKS0hic"
-      }
+      "videos": [
+        {
+          "label": "What organismal biology investigates",
+          "url": "https://www.pcom.edu/research/research-areas/biology.html"
+        }
+      ]
     },
     {
       "id": "subdisciplines",
@@ -28,10 +36,12 @@
       "shortTitle": "Biological subdisciplines",
       "description": "Examine the topic through at least three distinct biological subdisciplines.",
       "details": "Possible subdisciplines include cell biology, molecular biology, genetics, genomics, physiology, development, behaviour, evolution, ecology, and conservation biology. Do more than present three separate summaries: show how the disciplines connect and what becomes clearer when their evidence is synthesized.",
-      "video": {
-        "label": "Physiological ecology across disciplinary boundaries (4:56)",
-        "url": "https://www.youtube.com/watch?v=LLxp0wOCnbQ"
-      }
+      "videos": [
+        {
+          "label": "Why researchers work across disciplines",
+          "url": "https://www.youtube.com/watch?v=yyf0uTz0fFk"
+        }
+      ]
     }
   ],
   "topics": [
