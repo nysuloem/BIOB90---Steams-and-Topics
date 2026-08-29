@@ -55,6 +55,10 @@ test('student workflow autosaves, submits, persists, recovers, and exports CSV',
   assert.ok(!content.streams[1].videos.some((video) => video.url.includes('pcom.edu')));
   assert.ok(!content.streams[1].videos.some((video) => video.url.includes('lo6MzE09xm0')));
   assert.ok(content.streams[1].details.includes('Krogh principle'));
+  assert.ok(content.streams[1].details.includes('inverse Krogh principle'));
+  assert.deepEqual(content.streams[1].videos.map((resource) => resource.type), ['Read', 'Watch']);
+  assert.equal(content.streams[1].videos[0].url, 'https://www.journals.uchicago.edu/doi/full/10.1086/721620');
+  assert.equal(content.streams[1].videos[1].url, 'https://www.youtube.com/watch?v=AfiyJ_kCLR8');
   assert.equal(content.streams[2].videos.length, 2);
   assert.equal(content.quiz.questions.length, 10);
   assert.equal(content.quiz.questions[0].id, 'companions');
