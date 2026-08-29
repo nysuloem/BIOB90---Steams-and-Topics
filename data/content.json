@@ -38,7 +38,7 @@
     {
       "id": 1,
       "title": "Domestication and its biological limits",
-      "description": "Why have some species entered long-term relationships of domestication with people while others have not? Possible directions include behaviour, life history, genetics, ecology, cultural relationships, and the distinction between domestication, taming, and captive breeding.",
+      "description": "Why have some species entered long-term relationships of domestication with people while others have not? What makes domestication possible, where are its limits, and how does it differ from taming or captive breeding?",
       "sources": [
         {
           "label": "Live Science",
@@ -114,7 +114,7 @@
     {
       "id": 5,
       "title": "Seed dormancy and germination",
-      "description": "Seeds use diverse cues to remain dormant or begin germination. How do environmental conditions, physiology, evolutionary history, and relationships with people shape dormancy and the success of germination, cultivation, restoration, or seed banking?",
+      "description": "Seeds use diverse cues to remain dormant or begin germination. What determines when a seed waits or grows, why do these strategies vary, and how can that knowledge support cultivation, restoration, or seed banking?",
       "sources": [
         {
           "label": "Knowable Magazine",
@@ -133,7 +133,7 @@
     {
       "id": 6,
       "title": "Mosquitoes as vectors for disease",
-      "description": "Mosquitoes can transmit viruses, parasites, and other pathogens, but only some species and populations are effective vectors. How do mosquito genetics, immunity, microbiomes, behaviour, host choice, climate, and habitat shape transmission, and how can that biology inform control?",
+      "description": "Mosquitoes can transmit viruses, parasites, and other pathogens, but only some species and populations are effective vectors. What determines whether transmission succeeds, how might changing conditions alter risk, and which vulnerabilities could disease-control efforts exploit?",
       "sources": [
         {
           "label": "World Health Organization",
@@ -266,7 +266,7 @@
     {
       "id": 13,
       "title": "Regeneration and tissue engineering",
-      "description": "Living systems vary greatly in their capacity to repair or regenerate tissues. How can biological knowledge of cells, extracellular matrices, development, and naturally regenerating organisms inform tissue engineering, transplantation, and drug testing?",
+      "description": "Living systems vary greatly in their capacity to repair or replace damaged structures. Why can some rebuild functional tissues while others heal with scars, and how could those natural solutions improve tissue engineering, transplantation, or drug testing?",
       "sources": [
         {
           "label": "ScienceDaily",
@@ -285,7 +285,7 @@
     {
       "id": 14,
       "title": "High-altitude adaptation",
-      "description": "High altitude presents organisms with low oxygen, cold, intense radiation, and short growing seasons. How do organisms—including high-altitude human populations—acclimatize or adapt through physiology, behaviour, development, ecology, and evolution?",
+      "description": "High altitude exposes organisms to low oxygen, cold, intense radiation, and short growing seasons. How do organisms—including high-altitude human populations—survive and reproduce under these conditions, and what costs or limits accompany their solutions?",
       "sources": [
         {
           "label": "ScienceDaily",
@@ -304,7 +304,7 @@
     {
       "id": 15,
       "title": "The limits of biological performance",
-      "description": "Speed, endurance, strength, and recovery are constrained by trade-offs in anatomy, physiology, energy use, behaviour, and environment. What sets the limits of performance, and why do different organisms solve these challenges in different ways?",
+      "description": "Speed, endurance, strength, and recovery cannot all be maximized at once. What limits biological performance, what trade-offs arise among different kinds of performance, and why have organisms arrived at such different solutions?",
       "sources": [
         {
           "label": "The Conversation",
@@ -323,7 +323,7 @@
     {
       "id": 16,
       "title": "Longevity and lifespan variation",
-      "description": "Lifespans vary from days to centuries. How do genetics, physiology, life history, ecology, behaviour, and environment interact to shape aging and longevity, and what can unusually long- or short-lived organisms teach us?",
+      "description": "Lifespans vary from days to centuries. Why do organisms age at such different rates, what allows some to preserve function or resist damage for unusually long periods, and what can these extremes teach us about the limits of lifespan?",
       "sources": [
         {
           "label": "ScienceDaily",
@@ -437,7 +437,7 @@
     {
       "id": 22,
       "title": "Thermoregulation in extinct and living animals",
-      "description": "Animals occupy a continuum of strategies for producing, retaining, and exchanging heat. How can evidence from living organisms, fossils, anatomy, chemistry, behaviour, and environments be combined to infer thermoregulation in extinct animals such as dinosaurs?",
+      "description": "Animals occupy a continuum of strategies for producing, retaining, and exchanging heat. How can evidence from living organisms and the fossil record be combined to infer how extinct animals such as dinosaurs regulated body temperature?",
       "sources": [
         {
           "label": "Nature",
@@ -456,7 +456,7 @@
     {
       "id": 23,
       "title": "Biological limits of heat tolerance",
-      "description": "Extreme heat challenges cellular function, water balance, behaviour, reproduction, and survival. What sets heat limits across organisms, how do acclimatization and adaptation alter those limits, and how might biological and community knowledge guide responses to a warming climate?",
+      "description": "Extreme heat can disrupt biological function, reproduction, and survival. Why can some organisms tolerate conditions that are lethal to others, what happens as their limits are approached, and how might this knowledge guide responses to a warming climate?",
       "sources": [
         {
           "label": "Live Science",
@@ -494,7 +494,7 @@
     {
       "id": 25,
       "title": "Freeze tolerance and survival below 0°C",
-      "description": "Freezing threatens cells and tissues, yet some plants, animals, fungi, and microorganisms survive it. What molecular, physiological, behavioural, and ecological strategies prevent damage or permit recovery after freezing?",
+      "description": "Freezing threatens living structures, yet some plants, animals, fungi, and microorganisms survive below 0°C. How do they prevent or tolerate damage, what trade-offs accompany these solutions, and what determines whether recovery is possible?",
       "sources": [
         {
           "label": "ScienceDaily",
@@ -627,7 +627,7 @@
     {
       "id": 32,
       "title": "The landscape of fear",
-      "description": "Animals often trade access to food, mates, or shelter against the risk of encountering predators. How do these perceived risks shape movement, physiology, behaviour, species interactions, and ecosystem processes, and how can ecologists map or test a landscape of fear?",
+      "description": "Animals often trade access to food, mates, or shelter against the risk of encountering predators. How does perceived danger change where and when animals carry out these activities, what wider consequences follow, and how can a landscape of fear be detected or tested?",
       "sources": [
         {
           "label": "The Atlantic",
@@ -684,7 +684,7 @@
     {
       "id": 35,
       "title": "Energy balance in changing environments",
-      "description": "Environmental change can disrupt when, where, and how organisms acquire and spend energy. How do anatomy, physiology, behaviour, food webs, and seasonal timing shape energy balance and vulnerability? Polar bears and declining sea ice provide one important case study.",
+      "description": "Environmental change can disrupt when, where, and how organisms obtain and spend energy. How do organisms balance their energy budgets, what makes some especially vulnerable to disruption, and what can cases such as polar bears and declining sea ice reveal?",
       "sources": [
         {
           "label": "Oxford Academic",
@@ -779,7 +779,7 @@
     {
       "id": 40,
       "title": "Noise pollution and biological communication",
-      "description": "Many organisms use sound to navigate, find food or mates, avoid danger, and communicate. How does human-made noise alter sensory systems, behaviour, physiology, ecological relationships, and survival in aquatic or terrestrial environments?",
+      "description": "Many organisms use sound to navigate, find food or mates, avoid danger, and communicate. How does human-made noise interfere with these tasks, which organisms or settings are most vulnerable, and what consequences can spread beyond the individuals directly exposed?",
       "sources": [
         {
           "label": "The Guardian",
@@ -874,7 +874,7 @@
     {
       "id": 45,
       "title": "Camouflage, mimicry, and biological deception",
-      "description": "Organisms can avoid detection, imitate other species, or manipulate how receivers interpret signals. How do genetics, development, sensory systems, behaviour, ecology, and evolution produce camouflage and mimicry, and how do predators, prey, pollinators, or hosts respond?",
+      "description": "Organisms can avoid detection, imitate other species, or manipulate how receivers interpret signals. How are camouflage and mimicry produced, why do they succeed in some settings but fail in others, and how do other organisms respond to being deceived?",
       "sources": [
         {
           "label": "Animal camouflage: current issues and new perspectives",
@@ -912,7 +912,7 @@
     {
       "id": 47,
       "title": "Medicinal plants and biological activity",
-      "description": "Plants produce diverse compounds that can affect cells, microbes, parasites, and whole organisms. How do plant chemistry, physiology, ecology, cultivation, dose, and preparation shape biological activity, and how can promising effects be tested safely and responsibly?",
+      "description": "Plants produce diverse compounds that can affect cells, microbes, parasites, and whole organisms. What determines whether a plant preparation has a biological effect, why might results vary, and how can promising claims be tested safely and responsibly?",
       "sources": [
         {
           "label": "PubMed Central",
@@ -950,7 +950,7 @@
     {
       "id": 49,
       "title": "The evolution and biology of parental care",
-      "description": "Parental care ranges from none to prolonged and cooperative investment, and occurs in many animal groups. What ecological, physiological, developmental, behavioural, and evolutionary factors favour different forms of care?",
+      "description": "Parental care ranges from none to prolonged and cooperative investment, and occurs in many animal groups. Why do such different forms of care arise, what costs and benefits do they create for parents and offspring, and when is care likely to be favoured?",
       "sources": [
         {
           "label": "ScienceDaily",
@@ -988,7 +988,7 @@
     {
       "id": 51,
       "title": "Renewable energy and wildlife",
-      "description": "Renewable-energy infrastructure can affect organisms through collision, habitat change, noise, altered movement, or new ecological opportunities. How can knowledge of organismal biology, landscapes, and human priorities guide the design and placement of wind-energy systems?",
+      "description": "Renewable-energy infrastructure can cause collisions, alter habitats and movement, create noise, or offer new opportunities for wildlife. Which effects matter most in different settings, and how can wind-energy systems be designed and placed to reduce harm?",
       "sources": [
         {
           "label": "BBC",
@@ -1007,7 +1007,7 @@
     {
       "id": 52,
       "title": "Environmental enrichment and behavioural welfare",
-      "description": "Animals in human care may lack opportunities, choices, or challenges found in other environments. How can evidence about sensory systems, cognition, behaviour, ecology, and individual needs guide enrichment and the assessment of welfare across species and settings?",
+      "description": "Animals in human care may lack opportunities, choices, or challenges available in other environments. What makes enrichment genuinely beneficial, how should welfare be assessed across different animals and settings, and why might the same intervention help one individual but not another?",
       "sources": [
         {
           "label": "Faunalytics",
@@ -1083,7 +1083,7 @@
     {
       "id": 56,
       "title": "Nutritional ecology and managed diets",
-      "description": "Diet involves nutrients, toxins, physical processing, foraging behaviour, microbes, seasonal availability, and cultural or management decisions. How can nutritional ecology guide diets for organisms in human care while accounting for species differences and natural feeding biology?",
+      "description": "Animals differ greatly in what, when, and how they eat. How can diets for animals in human care meet nutritional needs while allowing natural feeding patterns, accounting for individual and seasonal variation, and avoiding unintended harm?",
       "sources": [
         {
           "label": "Journal of Zoo and Aquarium Research",
@@ -1102,7 +1102,7 @@
     {
       "id": 57,
       "title": "Psychoactive substances and animal behaviour",
-      "description": "Animals encounter fermented foods, plant toxins, and other compounds that affect nervous-system function. Which claims about deliberate use are supported by evidence, how do effects vary across organisms, and what might this reveal about ecology, behaviour, reward, and addiction?",
+      "description": "Animals encounter fermented foods, plant toxins, and other substances that can alter their actions or internal state. Which claims about deliberate use are supported by evidence, why do responses differ among organisms, and what can these encounters reveal about motivation and dependence?",
       "sources": [
         {
           "label": "BBC",
