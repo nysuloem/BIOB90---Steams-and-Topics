@@ -49,7 +49,10 @@ test('student workflow autosaves, submits, persists, recovers, and exports CSV',
   assert.equal(content.streams.length, 3);
   assert.ok(content.streams.every((stream) => stream.video?.url.includes('youtube.com')));
   assert.equal(content.quiz.questions.length, 10);
+  assert.equal(content.quiz.questions[0].id, 'companions');
+  assert.ok(!content.quiz.questions.some((question) => question.id === 'travel-snag'));
   assert.equal(content.quiz.outcomes.length, 10);
+  assert.equal(content.topics[44].title, 'Camouflage, mimicry, and biological deception');
   assert.ok(content.quiz.outcomes.every((outcome) => /^[EISNTFJP]{4}$/.test(outcome.jungType)));
 
   const start = await fetch(`${baseUrl}/api/student/start`, {
