@@ -22,8 +22,8 @@ content.streams = [
     id: 'toronto-zoo',
     title: 'Toronto Zoo: comparative organismal biology',
     shortTitle: 'Toronto Zoo',
-    description: 'Examine the topic by comparing at least three distinct plant and/or animal groups.',
-    details: 'Ask how differences and similarities in anatomy, physiology, behaviour, ecology, evolutionary history, or relationships with people shape the patterns you find. Toronto Zoo organisms and conservation programs may provide useful cases, but the topic does not have to be limited to zoo husbandry.',
+    description: 'Examine the topic comparatively through at least three distinct plant and/or animal groups. Moving beyond a narrow set of familiar organisms can reveal shared biological principles, important exceptions, and remarkable solutions to common challenges.',
+    details: 'This is integration through the diversity of life: instead of changing disciplinary lenses, you broaden the organisms being studied. Following a tradition associated with comparative biologists such as August Krogh and Knut Schmidt-Nielsen, ask what becomes visible only when different organisms are placed side by side. Toronto Zoo species and conservation programs may provide useful cases, but the project does not have to be limited to zoo husbandry.',
     videos: [
       { label: 'What organismal biology investigates', url: 'https://www.pcom.edu/research/research-areas/biology.html' }
     ]
@@ -32,8 +32,8 @@ content.streams = [
     id: 'subdisciplines',
     title: 'Biological subdisciplines',
     shortTitle: 'Biological subdisciplines',
-    description: 'Examine the topic through at least three distinct biological subdisciplines.',
-    details: 'Possible subdisciplines include cell biology, molecular biology, genetics, genomics, physiology, development, behaviour, evolution, ecology, and conservation biology. Do more than present three separate summaries: show how the disciplines connect and what becomes clearer when their evidence is synthesized.',
+    description: 'Examine the topic at the interfaces of at least three biological subdisciplines. Although areas such as physiology, cell biology, genetics, development, evolution, ecology, and biochemistry are often taught separately, their boundaries are largely historical and biological questions routinely cross them.',
+    details: 'Do not write three separate mini-reports. Bring evidence and ideas from the disciplines together to develop an explanation, hypothesis, or insight that no single discipline would produce alone. Fields such as evolutionary ecology, neurophysiology, and developmental biochemistry show how working between established areas can open new questions and push the boundaries of knowledge.',
     videos: [
       { label: 'Why researchers work across disciplines', url: 'https://www.youtube.com/watch?v=yyf0uTz0fFk' }
     ]
