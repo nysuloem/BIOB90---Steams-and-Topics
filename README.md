@@ -1,12 +1,12 @@
-# BIOB90 Streams, Topics & Teams
+# Tell Us About YOU Survey
 
-A single Railway-ready workflow for collecting the information needed to form BIOB90 project groups:
+A single Railway-ready BIOB90 survey for collecting the information needed to form project groups, in this order:
 
 - Quercus name and only the last four digits of the student number
-- ranked top five from 60 potential topics
-- complete ranking of the three BIOB90 streams, with optional context videos
 - an original, getaway-themed Avengers teamwork quiz
 - preferred meeting format and time of day
+- ranked top five from 60 potential topics
+- complete ranking of the three BIOB90 streams, with optional context videos
 - autosaved, recoverable responses
 - password-protected CSV export and submission reset for the course instructor
 
