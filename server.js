@@ -35,15 +35,25 @@ class SubmissionStore {
     await fsp.mkdir(path.dirname(this.filePath), { recursive: true });
     try {
       const parsed = JSON.parse(await fsp.readFile(this.filePath, 'utf8'));
-      for (const record of parsed.submissions || []) this.records.set(record.studentNumber, record);
+      let migrated = false;
+      for (const record of parsed.submissions || []) {
+        const studentNumberLast4 = String(record.studentNumberLast4 || record.studentNumber || '').slice(-4);
+        const recordKey = record.recordKey || studentKey(record.name, studentNumberLast4);
+        if (record.studentNumber || !record.studentNumberLast4 || !record.recordKey) migrated = true;
+        delete record.studentNumber;
+        record.studentNumberLast4 = studentNumberLast4;
+        record.recordKey = recordKey;
+        this.records.set(recordKey, record);
+      }
+      if (migrated) await this.persist();
     } catch (error) {
       if (error.code !== 'ENOENT') throw error;
       await this.persist();
     }
   }
 
-  get(studentNumber) {
-    return this.records.get(studentNumber) || null;
+  get(recordKey) {
+    return this.records.get(recordKey) || null;
   }
 
   list() {
@@ -51,9 +61,16 @@ class SubmissionStore {
   }
 
   async set(record) {
-    this.records.set(record.studentNumber, record);
+    this.records.set(record.recordKey, record);
     await this.persist();
     return record;
+  }
+
+  async clear() {
+    const removed = this.records.size;
+    this.records.clear();
+    await this.persist();
+    return removed;
   }
 
   persist() {
@@ -73,8 +90,12 @@ function normalizeName(value) {
   return String(value || '').trim().replace(/\s+/g, ' ');
 }
 
-function normalizeStudentNumber(value) {
+function normalizeStudentNumberLast4(value) {
   return String(value || '').replace(/\D/g, '');
+}
+
+function studentKey(name, studentNumberLast4) {
+  return crypto.createHash('sha256').update(`${normalizeName(name).toLocaleLowerCase()}\0${studentNumberLast4}`).digest('hex');
 }
 
 function safeEqual(a, b) {
@@ -141,7 +162,7 @@ function readJson(req) {
 
 function studentFromRequest(req) {
   const session = readToken(parseCookies(req).biob90_student);
-  return session?.role === 'student' ? store.get(session.studentNumber) : null;
+  return session?.role === 'student' ? store.get(session.recordKey) : null;
 }
 
 function isAdmin(req) {
@@ -152,7 +173,7 @@ function isAdmin(req) {
 function publicRecord(record) {
   return {
     name: record.name,
-    studentNumber: record.studentNumber,
+    studentNumberLast4: record.studentNumberLast4,
     currentStep: record.currentStep,
     streamRanking: record.streamRanking,
     topicRanking: record.topicRanking,
@@ -213,20 +234,20 @@ function submissionsCsv() {
   const traitIds = content.quiz.traits.map((trait) => trait.id);
   const questionIds = content.quiz.questions.map((question) => question.id);
   const headers = [
-    'Name', 'Student Number', 'Status', 'Created At', 'Updated At', 'Submitted At',
+    'Name', 'Student Number (last 4 digits)', 'Status', 'Created At', 'Updated At', 'Submitted At',
     'Stream Rank 1', 'Stream Rank 2', 'Stream Rank 3',
     'Topic Rank 1', 'Topic Rank 2', 'Topic Rank 3', 'Topic Rank 4', 'Topic Rank 5',
-    'Avenger Result', ...traitIds.map((id) => `Trait: ${id}`),
+    'Avenger Result', 'Jung-style Code', ...traitIds.map((id) => `Trait: ${id}`),
     'Meeting Format', 'Preferred Time', ...questionIds.map((id) => `Quiz: ${id}`)
   ];
   const streamName = new Map(content.streams.map((item) => [item.id, item.title]));
   const topicName = new Map(content.topics.map((item) => [item.id, item.title]));
-  const outcomeName = new Map(content.quiz.outcomes.map((item) => [item.id, item.name]));
+  const outcomes = new Map(content.quiz.outcomes.map((item) => [item.id, item]));
   const rows = store.list().map((record) => [
-    record.name, record.studentNumber, record.submittedAt ? 'Submitted' : 'In progress', record.createdAt, record.updatedAt, record.submittedAt,
+    record.name, record.studentNumberLast4, record.submittedAt ? 'Submitted' : 'In progress', record.createdAt, record.updatedAt, record.submittedAt,
     ...[0, 1, 2].map((index) => streamName.get(record.streamRanking[index]) || ''),
     ...[0, 1, 2, 3, 4].map((index) => topicName.get(record.topicRanking[index]) || ''),
-    outcomeName.get(record.avengerResult) || '', ...traitIds.map((id) => record.traitScores[id] || 0),
+    outcomes.get(record.avengerResult)?.name || '', outcomes.get(record.avengerResult)?.jungType || '', ...traitIds.map((id) => record.traitScores[id] || 0),
     record.meetingFormat, record.meetingTime, ...questionIds.map((id) => record.quizAnswers[id] || '')
   ]);
   return [headers, ...rows].map((row) => row.map(csvEscape).join(',')).join('\n');
@@ -238,27 +259,25 @@ async function api(req, res, url) {
   if (req.method === 'POST' && url.pathname === '/api/student/start') {
     const body = await readJson(req);
     const name = normalizeName(body.name);
-    const studentNumber = normalizeStudentNumber(body.studentNumber);
+    const studentNumberLast4 = normalizeStudentNumberLast4(body.studentNumberLast4);
     if (name.length < 2 || name.length > 120) return json(res, 400, { error: 'Enter your name exactly as it appears on Quercus.' });
-    if (!/^\d{8,12}$/.test(studentNumber)) return json(res, 400, { error: 'Enter a valid student number using digits only.' });
-    let record = store.get(studentNumber);
+    if (!/^\d{4}$/.test(studentNumberLast4)) return json(res, 400, { error: 'Enter the last four digits of your student number.' });
+    const recordKey = studentKey(name, studentNumberLast4);
+    let record = store.get(recordKey);
     let recovered = false;
     if (record) {
-      if (normalizeName(record.name).toLocaleLowerCase() !== name.toLocaleLowerCase()) {
-        return json(res, 404, { error: 'No saved response matches that name and student number.' });
-      }
       recovered = true;
     } else {
       const now = new Date().toISOString();
       record = {
-        name, studentNumber, createdAt: now, updatedAt: now, submittedAt: null, currentStep: 1,
+        name, studentNumberLast4, recordKey, createdAt: now, updatedAt: now, submittedAt: null, currentStep: 1,
         streamRanking: [], topicRanking: [], quizAnswers: {}, avengerResult: null,
         traitScores: Object.fromEntries(content.quiz.traits.map((trait) => [trait.id, 0])),
         meetingFormat: '', meetingTime: ''
       };
       await store.set(record);
     }
-    const token = createToken({ role: 'student', studentNumber }, 60 * 60 * 24 * 30);
+    const token = createToken({ role: 'student', recordKey }, 60 * 60 * 24 * 30);
     return json(res, 200, { recovered, record: publicRecord(record) }, { 'Set-Cookie': cookie('biob90_student', token, 60 * 60 * 24 * 30) });
   }
 
@@ -347,6 +366,14 @@ async function api(req, res, url) {
     return res.end(csv);
   }
 
+  if (req.method === 'POST' && url.pathname === '/api/admin/reset') {
+    if (!isAdmin(req)) return json(res, 401, { error: 'Instructor login required.' });
+    const body = await readJson(req);
+    if (body.confirmation !== 'RESET') return json(res, 400, { error: 'Type RESET to confirm.' });
+    const removed = await store.clear();
+    return json(res, 200, { ok: true, removed });
+  }
+
   return json(res, 404, { error: 'Not found.' });
 }
 
@@ -390,4 +417,4 @@ async function start() {
 
 if (require.main === module) start().catch((error) => { console.error(error); process.exit(1); });
 
-module.exports = { server, store, scoreQuiz, validateComplete, submissionsCsv, normalizeName, normalizeStudentNumber, start };
+module.exports = { server, store, scoreQuiz, validateComplete, submissionsCsv, normalizeName, normalizeStudentNumberLast4, start };
