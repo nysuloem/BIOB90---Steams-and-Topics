@@ -47,7 +47,9 @@ test('student workflow autosaves, submits, persists, recovers, and exports CSV',
   assert.ok(content.topics.every((topic) => topic.sources.length === 3));
   assert.ok(content.topics.every((topic) => !/indigenous/i.test(topic.description)));
   assert.equal(content.streams.length, 3);
-  assert.ok(content.streams.every((stream) => stream.video?.url.includes('youtube.com')));
+  assert.ok(content.streams.every((stream) => stream.videos?.length >= 1));
+  assert.ok(content.streams.flatMap((stream) => stream.videos).every((video) => /^https:\/\//.test(video.url)));
+  assert.equal(content.streams[0].videos.length, 2);
   assert.equal(content.quiz.questions.length, 10);
   assert.equal(content.quiz.questions[0].id, 'companions');
   assert.ok(content.quiz.questions[0].options.some((option) => option.id === 'family'));
