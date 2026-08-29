@@ -94,7 +94,8 @@ button:disabled { cursor: not-allowed; opacity: .42; }
 .stream-card { padding: 20px; border-left: 3px solid var(--teal); background: rgba(6, 25, 42, .64); border-radius: 13px; }
 .stream-card p { color: #cad9e5; margin: 8px 0; }
 .stream-card .details { color: var(--muted); font-size: .91rem; }
-.video-link { display: inline-block; margin-top: 6px; font-size: .86rem; font-weight: 750; }
+.video-links { display: grid; gap: 6px; margin-top: 10px; }
+.video-link { display: inline-block; font-size: .86rem; font-weight: 750; }
 .rank-box { margin-top: 24px; padding: 20px; background: rgba(4,16,28,.55); border-radius: 14px; border: 1px solid var(--line); }
 .rank-selects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .rank-label { color: var(--gold); font-size: .76rem; text-transform: uppercase; letter-spacing: .08em; }
