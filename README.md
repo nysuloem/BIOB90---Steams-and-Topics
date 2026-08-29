@@ -2,13 +2,13 @@
 
 A single Railway-ready workflow for collecting the information needed to form BIOB90 project groups:
 
-- Quercus name and student number
-- complete ranking of the three BIOB90 streams
+- Quercus name and only the last four digits of the student number
 - ranked top five from 60 potential topics
+- complete ranking of the three BIOB90 streams, with optional context videos
 - an original, getaway-themed Avengers teamwork quiz
 - preferred meeting format and time of day
 - autosaved, recoverable responses
-- password-protected CSV export for the course instructor
+- password-protected CSV export and submission reset for the course instructor
 
 The app has no third-party runtime dependencies. It uses Node's built-in HTTP, file-system, and cryptography modules, avoiding native modules that can fail to compile or crash on Railway.
 
@@ -30,7 +30,9 @@ Optional variable:
 
 ## Instructor export
 
-Select **Course instructor** at the bottom of the app, enter `INSTRUCTOR_PASSWORD`, and download the CSV. It includes submitted and in-progress autosaves, raw quiz responses, the calculated Avenger, and five teamwork trait scores for later group formation.
+Select **Course instructor** at the bottom of the app, enter `INSTRUCTOR_PASSWORD`, and download the CSV. It includes submitted and in-progress autosaves, raw quiz responses, the calculated Avenger, Jung-style code, and five teamwork trait scores for later group formation.
+
+The same screen can permanently remove all responses for testing. The instructor must type `RESET` before the server will accept this action. Download the CSV first if the test data may be needed.
 
 ## Local development
 
@@ -48,6 +50,6 @@ npm test
 
 ## Data handling
 
-Responses are stored in `/data/submissions.json` on Railway. Writes are serialized and use an atomic temporary-file replacement so a partially written file cannot corrupt the response set. Keep the Railway volume attached whenever the service is redeployed.
+Responses are stored in `/data/submissions.json` on Railway. Full student numbers are never requested or stored. A one-way key derived from the Quercus name and last four digits is used to find an autosave. Writes are serialized and use an atomic temporary-file replacement so a partially written file cannot corrupt the response set. Keep the Railway volume attached whenever the service is redeployed.
 
-The Avengers quiz is an unofficial educational teamwork activity. Its questions and scoring are original and are not copied from the linked BuzzFeed quiz.
+The Avengers quiz is an unofficial educational teamwork activity. Its questions and scoring are original and are not copied from the linked BuzzFeed quiz. It includes all nine BuzzFeed outcomes plus Black Panther from the course collaboration slides; the four-letter codes are educational interpretations rather than validated psychological results.
