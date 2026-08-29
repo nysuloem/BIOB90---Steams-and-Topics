@@ -7,8 +7,8 @@
       "description": "Bring the strengths of Indigenous ways of knowing and Western biological science into respectful dialogue, using both together to develop a fuller understanding of the topic.",
       "details": "Consider what each knowledge system reveals, where their insights meet or differ, and how learning from both could inform action. Use Indigenous-authored or community-grounded sources wherever possible, keep knowledge connected to its people and place, and respect community protocols and restrictions.",
       "video": {
-        "label": "Etuaptmumk with Elder Dr. Albert Marshall",
-        "url": "https://www.youtube.com/watch?v=pJcjf1nUckc"
+        "label": "Two-Eyed Seeing: a short introduction (11:30)",
+        "url": "https://www.youtube.com/watch?v=2MAp90YC510"
       }
     },
     {
@@ -18,8 +18,8 @@
       "description": "Examine the topic by comparing at least three distinct plant and/or animal groups.",
       "details": "Ask how differences and similarities in anatomy, physiology, behaviour, ecology, evolutionary history, or relationships with people shape the patterns you find. Toronto Zoo organisms and conservation programs may provide useful cases, but the topic does not have to be limited to zoo husbandry.",
       "video": {
-        "label": "Why we need zoos — Dr. Gabriela Mastromonaco",
-        "url": "https://www.youtube.com/watch?v=VGBzwnTW-O4"
+        "label": "Comparative anatomy: what comparisons reveal",
+        "url": "https://www.youtube.com/watch?v=7ABSjKS0hic"
       }
     },
     {
@@ -29,8 +29,8 @@
       "description": "Examine the topic through at least three distinct biological subdisciplines.",
       "details": "Possible subdisciplines include cell biology, molecular biology, genetics, genomics, physiology, development, behaviour, evolution, ecology, and conservation biology. Do more than present three separate summaries: show how the disciplines connect and what becomes clearer when their evidence is synthesized.",
       "video": {
-        "label": "What is biology? Areas of study",
-        "url": "https://www.youtube.com/watch?v=hKOpJBxXcx4"
+        "label": "Physiological ecology across disciplinary boundaries (4:56)",
+        "url": "https://www.youtube.com/watch?v=LLxp0wOCnbQ"
       }
     }
   ],
@@ -873,20 +873,20 @@
     },
     {
       "id": 45,
-      "title": "Ebola and viral spillover",
-      "description": "Ebolaviruses connect viral evolution, reservoir hosts, wildlife ecology, human biology, land use, community knowledge, and public health. What drives spillover and transmission, how do infections affect different hosts, and how can prevention and response strategies be designed responsibly?",
+      "title": "Camouflage, mimicry, and biological deception",
+      "description": "Organisms can avoid detection, imitate other species, or manipulate how receivers interpret signals. How do genetics, development, sensory systems, behaviour, ecology, and evolution produce camouflage and mimicry, and how do predators, prey, pollinators, or hosts respond?",
       "sources": [
         {
-          "label": "World Health Organization",
-          "url": "https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026"
+          "label": "Animal camouflage: current issues and new perspectives",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2674078/"
         },
         {
-          "label": "Canadian Red Cross",
-          "url": "https://www.redcross.ca/how-we-help/current-emergency-responses/democratic-republic-of-congo-ebola-outbreak-2026"
+          "label": "Signals, cues and the nature of mimicry",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5326520/"
         },
         {
-          "label": "World Health Organization",
-          "url": "https://www.who.int/health-topics/ebola"
+          "label": "Journal of Zoology review",
+          "url": "https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/jzo.12682"
         }
       ]
     },
@@ -1178,7 +1178,7 @@
   ],
   "quiz": {
     "title": "Discover your Avengers teamwork style",
-    "intro": "This informal activity uses the four Jung preference pairs—extraversion or introversion, sensing or intuition, thinking or feeling, and judging or perceiving—to start a conversation about how you work with others. It is not a personality assessment and there is no best result.",
+    "intro": "We’re going on a trip this weekend. Choose the option that feels most like you—even if none is perfect—and we’ll match you with an Avenger whose teamwork style resembles yours. There are no better or worse results.",
     "traits": [
       {
         "id": "coordinator",
@@ -1360,6 +1360,45 @@
     ],
     "questions": [
       {
+        "id": "companions",
+        "prompt": "First, who are you going with?",
+        "options": [
+          {
+            "id": "closest-friends",
+            "label": "A few close friends who already know one another well",
+            "scores": {
+              "connector": 3,
+              "coordinator": 1
+            }
+          },
+          {
+            "id": "new-people",
+            "label": "People I do not know well yet—it could be a good way to connect",
+            "scores": {
+              "connector": 2,
+              "adapter": 2
+            }
+          },
+          {
+            "id": "one-friend",
+            "label": "One trusted friend; a smaller trip is easier to plan and enjoy",
+            "scores": {
+              "analyst": 2,
+              "coordinator": 1,
+              "connector": 1
+            }
+          },
+          {
+            "id": "open-invite",
+            "label": "Whoever is excited and available at the last minute",
+            "scores": {
+              "adapter": 2,
+              "innovator": 2
+            }
+          }
+        ]
+      },
+      {
         "id": "destination",
         "prompt": "First, what kind of destination sounds best?",
         "options": [
@@ -1431,44 +1470,6 @@
           {
             "id": "preferences",
             "label": "Ask what everyone wants and help find the choice that includes them",
-            "scores": {
-              "connector": 3,
-              "adapter": 1
-            }
-          }
-        ]
-      },
-      {
-        "id": "travel-snag",
-        "prompt": "A cancellation disrupts the first day. Your instinct is to…",
-        "options": [
-          {
-            "id": "reassign",
-            "label": "Reset the plan, assign the urgent tasks, and get the day moving again",
-            "scores": {
-              "coordinator": 3,
-              "adapter": 1
-            }
-          },
-          {
-            "id": "diagnose",
-            "label": "Work out exactly what changed before choosing the best alternative",
-            "scores": {
-              "analyst": 3,
-              "adapter": 1
-            }
-          },
-          {
-            "id": "improvise",
-            "label": "Turn the disruption into a completely different—and possibly better—day",
-            "scores": {
-              "innovator": 2,
-              "adapter": 2
-            }
-          },
-          {
-            "id": "steady-team",
-            "label": "Check how everyone is doing and keep frustration from taking over",
             "scores": {
               "connector": 3,
               "adapter": 1
