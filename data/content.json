@@ -22,8 +22,12 @@
       "title": "Toronto Zoo: comparative biology",
       "shortTitle": "Toronto Zoo",
       "description": "Compare at least three distinct plant and/or animal groups to investigate how different species meet common biological needs and respond to their environments. Similarities can reveal shared principles; differences can reveal constraints, trade-offs, and remarkable solutions.",
-      "details": "This is integration through the diversity of life: instead of changing disciplinary lenses, you broaden the organisms being studied. Following a tradition associated with comparative biologists such as August Krogh and Knut Schmidt-Nielsen, ask what becomes visible only when species are placed side by side. Toronto Zoo species and conservation programs may provide useful cases, but the project does not have to be limited to zoo husbandry.",
+      "details": "Comparative biology uses the diversity of life to uncover general principles and understand how different species have evolved distinct solutions. The Krogh principle proposes that, for many biological questions, particular organisms are especially well suited to reveal the answer. Ask what becomes visible only when species are placed side by side. Toronto Zoo species and conservation programs may provide useful cases.",
       "videos": [
+        {
+          "label": "General overview: comparative physiology and the Krogh principle (27:18)",
+          "url": "https://www.youtube.com/watch?v=lo6MzE09xm0"
+        },
         {
           "label": "Comparative biology in action: why species age differently (13:29)",
           "url": "https://www.youtube.com/watch?v=X0TjEPKFMJM"
@@ -35,7 +39,7 @@
       "title": "Biological subdisciplines",
       "shortTitle": "Biological subdisciplines",
       "description": "Examine the topic at the interfaces of at least three biological subdisciplines. Although areas such as physiology, cell biology, genetics, development, evolution, ecology, and biochemistry are often taught separately, their boundaries are largely historical and biological questions routinely cross them.",
-      "details": "Do not write three separate mini-reports. Bring evidence and ideas from the disciplines together to develop an explanation, hypothesis, or insight that no single discipline would produce alone. Fields such as evolutionary ecology, neurophysiology, and developmental biochemistry show how working between established areas can open new questions and push the boundaries of knowledge.",
+      "details": "Bring evidence and ideas from the disciplines together to develop an explanation, hypothesis, or insight that no single discipline would produce alone. Fields such as evolutionary ecology, neurophysiology, and developmental biochemistry show how working between established areas can open new questions and push the boundaries of knowledge.",
       "videos": [
         {
           "label": "Why researchers work across disciplines",
