@@ -51,6 +51,7 @@ test('student workflow autosaves, submits, persists, recovers, and exports CSV',
   assert.equal(content.quiz.questions.length, 10);
   assert.equal(content.quiz.questions[0].id, 'companions');
   assert.ok(content.quiz.questions[0].options.some((option) => option.id === 'family'));
+  assert.ok(content.quiz.questions.every((question) => question.options.length === 4));
   assert.ok(!content.quiz.questions.some((question) => question.id === 'travel-snag'));
   assert.equal(content.quiz.outcomes.length, 10);
   assert.equal(content.topics[44].title, 'Camouflage, mimicry, and biological deception');
