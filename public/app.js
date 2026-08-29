@@ -16,7 +16,7 @@ let saveTimer = null;
 let queuedPatch = {};
 let saveChain = Promise.resolve();
 
-const stepNames = ['Topics', 'Streams', 'Team style', 'Preferences', 'Review'];
+const stepNames = ['Team style', 'Preferences', 'Topics', 'Streams', 'Review'];
 
 function escapeHtml(value) {
   return String(value ?? '').replace(/[&<>'"]/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[character]);
@@ -86,10 +86,10 @@ function renderWelcome() {
   setSaveStatus('');
   app.innerHTML = `
     <section class="panel welcome-panel">
-      <div class="eyebrow">BIOB90 group preferences</div>
-      <h1>Project topic and group-work questionnaire</h1>
-      <p class="lead">You will rank five biology topics, rank three ways of investigating a topic, complete a short Avengers teamwork activity, and record your meeting preferences. Your responses will be used to form project groups.</p>
-      <ol class="welcome-steps"><li>Choose and rank five topics.</li><li>Rank the three project streams.</li><li>Complete the teamwork activity.</li><li>Record your meeting preferences and submit.</li></ol>
+      <div class="eyebrow">BIOB90 group formation</div>
+      <h1>Tell Us About YOU Survey</h1>
+      <p class="lead">Complete a short Avengers teamwork activity, record your meeting preferences, rank five biology topics, and rank three ways of investigating a topic. Your responses will be used to form project groups.</p>
+      <ol class="welcome-steps"><li>Complete the Avengers teamwork activity.</li><li>Record your meeting preferences.</li><li>Choose and rank five topics.</li><li>Rank the three project streams and submit.</li></ol>
       <form id="identity-form" class="form-card">
         <h2>Begin or resume</h2>
         <div class="field">
@@ -161,7 +161,7 @@ function scrollToPageTop() {
 function renderStreams() {
   const selected = record.streamRanking || [];
   app.innerHTML = `<section class="panel">
-    <div class="section-heading"><div><div class="eyebrow">Step 2 of 5</div><h2>Choose how you want to investigate your topic</h2><p>A stream is the approach you will use to investigate whichever topic is assigned. Read all three descriptions and watch the optional context videos before ranking them.</p></div><span class="count-badge">Rank all 3</span></div>
+    <div class="section-heading"><div><div class="eyebrow">Step 4 of 5</div><h2>Choose how you want to investigate your topic</h2><p>A stream is the approach you will use to investigate whichever topic is assigned. Read all three descriptions and watch the optional context videos before ranking them.</p></div><span class="count-badge">Rank all 3</span></div>
     <div class="stream-grid">${content.streams.map((stream) => `<article class="stream-card"><h3>${escapeHtml(stream.title)}</h3><p>${escapeHtml(stream.description)}</p><p class="details">${escapeHtml(stream.details)}</p><a class="video-link" href="${escapeHtml(stream.video.url)}" target="_blank" rel="noopener">Watch: ${escapeHtml(stream.video.label)} <span aria-hidden="true">↗</span></a></article>`).join('')}</div>
     <div class="rank-box"><h3>Your stream ranking</h3><p class="hint">Rank 1 is your first choice. Each stream can be used only once.</p>
       <div class="rank-selects">${[0, 1, 2].map((index) => `<label><span class="rank-label">Rank ${index + 1}</span><select data-stream-rank="${index}"><option value="">Choose a stream</option>${content.streams.map((stream) => `<option value="${stream.id}" ${selected[index] === stream.id ? 'selected' : ''}>${escapeHtml(stream.shortTitle)}</option>`).join('')}</select></label>`).join('')}</div>
@@ -240,11 +240,11 @@ function preserveTopicPositionAndRender() {
 
 function renderTopics() {
   app.innerHTML = `<section class="panel">
-    <div class="section-heading"><div><div class="eyebrow">Step 1 of 5</div><h2>Choose and rank five topics</h2><p>Read the descriptions and use the three starting sources for context. Add exactly five topics, then use the arrows to put your first choice at the top.</p></div><span class="count-badge">${record.topicRanking.length} of 5 selected</span></div>
+    <div class="section-heading"><div><div class="eyebrow">Step 3 of 5</div><h2>Choose and rank five topics</h2><p>We will do our best to assign you to your first choice, but be prepared to work on any topic you include. Read the descriptions and three starting sources, add exactly five topics, then use the arrows to put your first choice at the top.</p></div><span class="count-badge">${record.topicRanking.length} of 5 selected</span></div>
     <div class="topic-layout">
-      <aside class="ranked-topics"><h3>Your top five</h3>${renderRankedTopics()}</aside>
+      <aside class="ranked-topics"><h3>Your top five</h3>${renderRankedTopics()}<p id="topic-error" class="error-message" role="alert"></p></aside>
       <div class="topic-browser"><div class="field"><label for="topic-search">Search 60 topics</label><input id="topic-search" type="search" value="${escapeHtml(topicSearch)}" placeholder="Try migration, cancer, climate…"></div><div class="topic-list">${topicCards()}</div></div>
-    </div>${navButtons({ back: false, nextLabel: 'Continue to streams' })}
+    </div>${navButtons({ nextLabel: 'Continue to streams' })}
   </section>`;
   const search = document.querySelector('#topic-search');
   search.addEventListener('input', () => {
@@ -253,7 +253,17 @@ function renderTopics() {
     bindTopicControls();
   });
   bindTopicControls();
-  bindNavigation(() => record.topicRanking.length === 5 ? '' : 'You must choose and rank five topics');
+  document.querySelector('[data-nav="back"]').addEventListener('click', () => goToStep(2));
+  document.querySelector('[data-nav="next"]').addEventListener('click', () => {
+    const error = document.querySelector('#topic-error');
+    if (record.topicRanking.length !== 5) {
+      error.textContent = 'You must choose five topics';
+      document.querySelector('.ranked-topics').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+    error.textContent = '';
+    goToStep(4);
+  });
 }
 
 function quizResultHtml() {
@@ -261,15 +271,14 @@ function quizResultHtml() {
   const outcome = content.quiz.outcomes.find((item) => item.id === record.avengerResult);
   const maximum = Math.max(...Object.values(record.traitScores), 1);
   return `<article class="result-card"><div class="eyebrow">Your teamwork match</div><h3 class="result-name">${escapeHtml(outcome.name)}</h3><p class="jung-code">Jung-style preference code: <strong>${escapeHtml(outcome.jungType)}</strong></p><strong>${escapeHtml(outcome.tagline)}</strong><p>${escapeHtml(outcome.description)}</p><p class="hint"><strong>Watch-out:</strong> ${escapeHtml(outcome.watchOut)}</p>
-    <div class="trait-bars">${content.quiz.traits.map((trait) => { const value = record.traitScores[trait.id] || 0; return `<div class="trait-row"><span>${escapeHtml(trait.name)}</span><span class="trait-track"><span class="trait-fill" style="width:${Math.round(value / maximum * 100)}%"></span></span><strong>${value}</strong></div>`; }).join('')}</div></article>`;
+    <div class="trait-bars">${content.quiz.traits.map((trait) => { const value = record.traitScores[trait.id] || 0; return `<div class="trait-row"><span>${escapeHtml(trait.name)}</span><span class="trait-track"><span class="trait-fill" style="width:${Math.round(value / maximum * 100)}%"></span></span><strong>${value}</strong></div>`; }).join('')}</div><p class="hint">The possible results include all nine characters from the referenced BuzzFeed quiz plus Black Panther from the course collaboration slides. The four-letter code is an informal educational interpretation, not a clinical or validated personality result.</p></article>`;
 }
 
 function renderQuiz() {
   app.innerHTML = `<section class="panel">
-    <div class="section-heading"><div><div class="eyebrow">Step 3 of 5</div><h2>${escapeHtml(content.quiz.title)}</h2><p>${escapeHtml(content.quiz.intro)}</p><div class="learning-note"><strong>Why include this?</strong> Diverse teams can combine different strengths and compensate for individual blind spots. Five Captain Americas, for example, might create structure and follow through reliably—but could miss the experimentation, analysis, adaptability, or perspective that other Avengers contribute.</div></div><span class="count-badge">${Object.keys(record.quizAnswers).length} of ${content.quiz.questions.length}</span></div>
+    <div class="section-heading"><div><div class="eyebrow">Step 1 of 5</div><h2>${escapeHtml(content.quiz.title)}</h2><p>${escapeHtml(content.quiz.intro)}</p><div class="learning-note"><strong>Why include this?</strong> Diverse teams can combine different strengths and compensate for individual blind spots. Five Captain Americas, for example, might create structure and follow through reliably—but could miss the experimentation, analysis, adaptability, or perspective that other Avengers contribute.</div></div><span class="count-badge">${Object.keys(record.quizAnswers).length} of ${content.quiz.questions.length}</span></div>
     <div class="question-list">${content.quiz.questions.map((question, index) => `<fieldset class="question-card"><legend><span class="question-number">Question ${index + 1}</span><br>${escapeHtml(question.prompt)}</legend><div class="option-grid">${question.options.map((option) => `<label class="choice"><input type="radio" name="${question.id}" value="${option.id}" ${record.quizAnswers[question.id] === option.id ? 'checked' : ''}><span>${escapeHtml(option.label)}</span></label>`).join('')}</div></fieldset>`).join('')}</div>
-    <div id="quiz-result">${quizResultHtml()}</div>${navButtons()}
-    <p class="hint">The possible results include all nine characters from the referenced BuzzFeed quiz plus Black Panther from the course collaboration slides. The four-letter codes follow the course slides where available and are informal educational interpretations, not clinical or validated personality results.</p>
+    <div id="quiz-result">${quizResultHtml()}</div>${navButtons({ back: false, nextLabel: 'Meeting preferences' })}
   </section>`;
   document.querySelectorAll('.question-card input').forEach((input) => input.addEventListener('change', async () => {
     record.quizAnswers[input.name] = input.value;
@@ -290,11 +299,11 @@ function renderPreferences() {
     ['morning', 'Morning'], ['afternoon', 'Afternoon'], ['evening', 'Evening'], ['flexible', 'Flexible / no strong preference']
   ];
   app.innerHTML = `<section class="panel">
-    <div class="section-heading"><div><div class="eyebrow">Step 4 of 5</div><h2>How do you prefer to work together?</h2><p>These preferences will help us avoid forming groups whose basic meeting needs are incompatible.</p></div></div>
+    <div class="section-heading"><div><div class="eyebrow">Step 2 of 5</div><h2>How do you prefer to work together?</h2><p>These preferences will help us avoid forming groups whose basic meeting needs are incompatible.</p></div></div>
     <div class="preference-grid">
       <fieldset class="preference-group"><legend>Preferred meeting format</legend>${formatOptions.map(([id, label]) => `<label class="choice"><input type="radio" name="meetingFormat" value="${id}" ${record.meetingFormat === id ? 'checked' : ''}><span>${label}</span></label>`).join('')}</fieldset>
       <fieldset class="preference-group"><legend>Preferred meeting time</legend>${timeOptions.map(([id, label]) => `<label class="choice"><input type="radio" name="meetingTime" value="${id}" ${record.meetingTime === id ? 'checked' : ''}><span>${label}</span></label>`).join('')}</fieldset>
-    </div>${navButtons({ nextLabel: 'Review responses' })}
+    </div>${navButtons({ nextLabel: 'Choose topics' })}
   </section>`;
   document.querySelectorAll('input[name="meetingFormat"]').forEach((input) => input.addEventListener('change', () => {
     record.meetingFormat = input.value; scheduleSave({ meetingFormat: input.value });
@@ -315,10 +324,10 @@ function renderReview() {
     <div class="section-heading"><div><div class="eyebrow">Step 5 of 5</div><h2>Review your project preferences.</h2><p>You can go back and revise anything. Submitting confirms that these are the preferences you want used for group formation.</p></div></div>
     ${record.submittedAt ? `<div class="submitted-banner"><strong>Submitted.</strong> Your preferences were submitted on ${new Date(record.submittedAt).toLocaleString()}. You may still revise and resubmit them.</div>` : ''}
     <div class="review-grid">
-      <article class="review-card"><h3>Topic ranking</h3><ol>${record.topicRanking.map((id) => `<li>${escapeHtml(topicById(id)?.title || id)}</li>`).join('')}</ol></article>
-      <article class="review-card"><h3>Stream ranking</h3><ol>${record.streamRanking.map((id) => `<li>${escapeHtml(content.streams.find((item) => item.id === id)?.title || id)}</li>`).join('')}</ol></article>
       <article class="review-card"><h3>Teamwork style</h3><strong>${escapeHtml(outcome?.name || 'Not complete')}</strong><p>${escapeHtml(outcome?.jungType || '')} · ${escapeHtml(outcome?.tagline || '')}</p></article>
       <article class="review-card"><h3>Meeting preferences</h3><ul><li>${escapeHtml(labelMeeting(record.meetingFormat))}</li><li>${escapeHtml(labelMeeting(record.meetingTime))}</li></ul></article>
+      <article class="review-card"><h3>Topic ranking</h3><ol>${record.topicRanking.map((id) => `<li>${escapeHtml(topicById(id)?.title || id)}</li>`).join('')}</ol></article>
+      <article class="review-card"><h3>Stream ranking</h3><ol>${record.streamRanking.map((id) => `<li>${escapeHtml(content.streams.find((item) => item.id === id)?.title || id)}</li>`).join('')}</ol></article>
     </div>
     <div class="button-row"><button class="secondary" type="button" data-nav="back">Back</button><div class="right"><button id="submit-responses" class="primary" type="button">${record.submittedAt ? 'Resubmit updated responses' : 'Submit preferences'}</button></div></div>
     <p id="submit-error" class="error-message" role="alert"></p>
@@ -347,7 +356,7 @@ function renderReview() {
 function render() {
   if (!record) return renderWelcome();
   renderProgress();
-  ({ 1: renderTopics, 2: renderStreams, 3: renderQuiz, 4: renderPreferences, 5: renderReview })[step]();
+  ({ 1: renderQuiz, 2: renderPreferences, 3: renderTopics, 4: renderStreams, 5: renderReview })[step]();
 }
 
 function renderAdminLogin(message = '') {
