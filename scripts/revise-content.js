@@ -23,10 +23,10 @@ content.streams = [
     title: 'Toronto Zoo: comparative biology',
     shortTitle: 'Toronto Zoo',
     description: 'Compare at least three distinct plant and/or animal groups to investigate how different species meet common biological needs and respond to their environments. Similarities can reveal shared principles; differences can reveal constraints, trade-offs, and remarkable solutions.',
-    details: 'Comparative biology uses the diversity of life to uncover general principles and understand how different species have evolved distinct solutions. The Krogh principle proposes that, for many biological questions, particular organisms are especially well suited to reveal the answer. Ask what becomes visible only when species are placed side by side. Toronto Zoo species and conservation programs may provide useful cases.',
+    details: 'Comparative biology uses the diversity of life to uncover general principles and understand how different species have evolved distinct solutions. The Krogh principle begins with a biological question and seeks an organism especially well suited to reveal the answer. The inverse Krogh principle begins with an organism and asks what questions its distinctive biology inspires. These approaches are complementary. Ask what becomes visible only when species are placed side by side. Toronto Zoo species and conservation programs may provide useful cases.',
     videos: [
-      { label: 'The Krogh principle in action: extreme adaptations reveal general principles (starts at 25:36)', url: 'https://www.youtube.com/watch?v=oDvvVOlyaLI&t=1536s' },
-      { label: 'Comparative biology in action: why species age differently (13:29)', url: 'https://www.youtube.com/watch?v=X0TjEPKFMJM' }
+      { type: 'Read', label: 'The inverse Krogh principle: All organisms are worthy of study', url: 'https://www.journals.uchicago.edu/doi/full/10.1086/721620' },
+      { type: 'Watch', label: 'Comparative thinking in biology — Adrian Currie', url: 'https://www.youtube.com/watch?v=AfiyJ_kCLR8' }
     ]
   },
   {
