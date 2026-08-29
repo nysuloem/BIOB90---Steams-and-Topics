@@ -13,7 +13,7 @@ content.streams = [
     shortTitle: 'Two-Eyed Seeing',
     description: 'Bring the strengths of Indigenous ways of knowing and Western biological science into respectful dialogue, using both together to develop a fuller understanding of the topic.',
     details: 'Consider what each knowledge system reveals, where their insights meet or differ, and how learning from both could inform action. Use Indigenous-authored or community-grounded sources wherever possible, keep knowledge connected to its people and place, and respect community protocols and restrictions.',
-    video: { label: 'Etuaptmumk with Elder Dr. Albert Marshall', url: 'https://www.youtube.com/watch?v=pJcjf1nUckc' }
+    video: { label: 'Two-Eyed Seeing: a short introduction (11:30)', url: 'https://www.youtube.com/watch?v=2MAp90YC510' }
   },
   {
     id: 'toronto-zoo',
@@ -21,7 +21,7 @@ content.streams = [
     shortTitle: 'Toronto Zoo',
     description: 'Examine the topic by comparing at least three distinct plant and/or animal groups.',
     details: 'Ask how differences and similarities in anatomy, physiology, behaviour, ecology, evolutionary history, or relationships with people shape the patterns you find. Toronto Zoo organisms and conservation programs may provide useful cases, but the topic does not have to be limited to zoo husbandry.',
-    video: { label: 'Why we need zoos — Dr. Gabriela Mastromonaco', url: 'https://www.youtube.com/watch?v=VGBzwnTW-O4' }
+    video: { label: 'Comparative anatomy: what comparisons reveal', url: 'https://www.youtube.com/watch?v=7ABSjKS0hic' }
   },
   {
     id: 'subdisciplines',
@@ -29,7 +29,7 @@ content.streams = [
     shortTitle: 'Biological subdisciplines',
     description: 'Examine the topic through at least three distinct biological subdisciplines.',
     details: 'Possible subdisciplines include cell biology, molecular biology, genetics, genomics, physiology, development, behaviour, evolution, ecology, and conservation biology. Do more than present three separate summaries: show how the disciplines connect and what becomes clearer when their evidence is synthesized.',
-    video: { label: 'What is biology? Areas of study', url: 'https://www.youtube.com/watch?v=hKOpJBxXcx4' }
+    video: { label: 'Physiological ecology across disciplinary boundaries (4:56)', url: 'https://www.youtube.com/watch?v=LLxp0wOCnbQ' }
   }
 ];
 
@@ -106,6 +106,16 @@ topic(43, {
   ]
 });
 
+topic(45, {
+  title: 'Camouflage, mimicry, and biological deception',
+  description: 'Organisms can avoid detection, imitate other species, or manipulate how receivers interpret signals. How do genetics, development, sensory systems, behaviour, ecology, and evolution produce camouflage and mimicry, and how do predators, prey, pollinators, or hosts respond?',
+  sources: [
+    { label: 'Animal camouflage: current issues and new perspectives', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC2674078/' },
+    { label: 'Signals, cues and the nature of mimicry', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5326520/' },
+    { label: 'Journal of Zoology review', url: 'https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/jzo.12682' }
+  ]
+});
+
 topic(47, {
   title: 'Medicinal plants and biological activity',
   description: 'Plants produce diverse compounds that can affect cells, microbes, parasites, and whole organisms. How do plant chemistry, physiology, ecology, cultivation, dose, and preparation shape biological activity, and how can promising effects be tested safely and responsibly?',
@@ -167,7 +177,6 @@ const additions = {
   36: { label: 'Nature Education', url: 'https://www.nature.com/scitable/knowledge/library/allee-effects-19699394/' },
   40: { label: 'NOAA', url: 'https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-noise' },
   42: { label: 'World Health Organization', url: 'https://www.who.int/publications/i/item/9789241516198' },
-  45: { label: 'World Health Organization', url: 'https://www.who.int/health-topics/ebola' },
   46: { label: 'Animal Cognition', url: 'https://link.springer.com/article/10.1007/s10071-021-01557-0' },
   53: { label: 'UNSCEAR', url: 'https://www.unscear.org/unscear/en/areas-of-work/chernobyl.html' },
   54: { label: 'NOAA Office of Response and Restoration', url: 'https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills' }
@@ -181,7 +190,20 @@ for (const [number, source] of Object.entries(additions)) {
 for (const item of content.topics) item.sources = item.sources.slice(0, 3);
 
 content.quiz.title = 'Discover your Avengers teamwork style';
-content.quiz.intro = 'This informal activity uses the four Jung preference pairs—extraversion or introversion, sensing or intuition, thinking or feeling, and judging or perceiving—to start a conversation about how you work with others. It is not a personality assessment and there is no best result.';
+content.quiz.intro = 'We’re going on a trip this weekend. Choose the option that feels most like you—even if none is perfect—and we’ll match you with an Avenger whose teamwork style resembles yours. There are no better or worse results.';
+content.quiz.questions = [
+  {
+    id: 'companions',
+    prompt: 'First, who are you going with?',
+    options: [
+      { id: 'closest-friends', label: 'A few close friends who already know one another well', scores: { connector: 3, coordinator: 1 } },
+      { id: 'new-people', label: 'People I do not know well yet—it could be a good way to connect', scores: { connector: 2, adapter: 2 } },
+      { id: 'one-friend', label: 'One trusted friend; a smaller trip is easier to plan and enjoy', scores: { analyst: 2, coordinator: 1, connector: 1 } },
+      { id: 'open-invite', label: 'Whoever is excited and available at the last minute', scores: { adapter: 2, innovator: 2 } }
+    ]
+  },
+  ...content.quiz.questions.filter((question) => question.id !== 'companions' && question.id !== 'travel-snag')
+];
 content.quiz.outcomes = [
   { id: 'captain-america', name: 'Captain America', jungType: 'ISFJ', tagline: 'The dependable coordinator', description: 'You bring reliability, clear standards, and concern for the people affected by a decision.', watchOut: 'Leave room for the plan to change when a teammate finds a better route.', profile: { coordinator: 4, analyst: 1, innovator: 1, connector: 3, adapter: 1 } },
   { id: 'spider-man', name: 'Spider-Man', jungType: 'ENFP', tagline: 'The curious connector', description: 'You learn quickly, make energetic connections, and want your work to help other people.', watchOut: 'Choose priorities deliberately so enthusiasm does not become overcommitment.', profile: { coordinator: 1, analyst: 1, innovator: 3, connector: 3, adapter: 2 } },
