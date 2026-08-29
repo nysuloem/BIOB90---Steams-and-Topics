@@ -53,6 +53,7 @@ test('student workflow autosaves, submits, persists, recovers, and exports CSV',
   assert.equal(content.streams[1].title, 'Toronto Zoo: comparative biology');
   assert.equal(content.streams[1].videos.length, 2);
   assert.ok(!content.streams[1].videos.some((video) => video.url.includes('pcom.edu')));
+  assert.ok(!content.streams[1].videos.some((video) => video.url.includes('lo6MzE09xm0')));
   assert.ok(content.streams[1].details.includes('Krogh principle'));
   assert.equal(content.streams[2].videos.length, 2);
   assert.equal(content.quiz.questions.length, 10);
