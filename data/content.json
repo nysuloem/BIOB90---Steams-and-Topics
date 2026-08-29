@@ -1,0 +1,1665 @@
+{
+  "streams": [
+    {
+      "id": "two-eyed-seeing",
+      "title": "Two-Eyed Seeing (Etuaptmumk)",
+      "shortTitle": "Two-Eyed Seeing",
+      "description": "Bring the strengths of Indigenous ways of knowing and Western biological science into respectful dialogue, using both together to develop a fuller understanding of the topic.",
+      "details": "Consider what each knowledge system reveals, where their insights meet or differ, and how learning from both could inform action. Use Indigenous-authored or community-grounded sources wherever possible, keep knowledge connected to its people and place, and respect community protocols and restrictions. Indigenous Knowledge is not a generic perspective, an add-on, or data to be extracted."
+    },
+    {
+      "id": "toronto-zoo",
+      "title": "Toronto Zoo: Comparative Organismal Biology",
+      "shortTitle": "Toronto Zoo",
+      "description": "Examine the topic by comparing at least three distinct plant and/or animal groups.",
+      "details": "Explain how differences and similarities in anatomy, physiology, behaviour, ecology, evolutionary history, or relationships with people shape the patterns you find. Toronto Zoo organisms and conservation programs may provide useful cases, but the topic does not have to be limited to zoo husbandry."
+    },
+    {
+      "id": "subdisciplines",
+      "title": "Integrative Biological Subdisciplines",
+      "shortTitle": "Biological Subdisciplines",
+      "description": "Examine the topic through at least three distinct biological subdisciplines.",
+      "details": "Possible subdisciplines include cell biology, molecular biology, genetics, genomics, physiology, development, behaviour, evolution, ecology, and conservation biology. Do more than present three separate summaries: show how the disciplines connect and what becomes clearer when their evidence is synthesized."
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "title": "Domestication and its biological limits",
+      "description": "Why have some species entered long-term relationships of domestication with people while others have not? Possible directions include behaviour, life history, genetics, ecology, cultural relationships, and the distinction between domestication, taming, and captive breeding.",
+      "sources": [
+        {
+          "label": "Live Science",
+          "url": "https://www.livescience.com/33870-domesticated-animals-criteria.html"
+        },
+        {
+          "label": "Popular Mechanics",
+          "url": "https://www.popularmechanics.com/science/animals/a26454611/animals-cant-domesticate/"
+        },
+        {
+          "label": "Frontiers",
+          "url": "https://www.frontiersin.org/articles/10.3389/fevo.2020.00103/full"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Microclimates and thermal stress",
+      "description": "Organisms experience temperature, humidity, wind, shade, and water at a local scale. How do microclimates affect biological performance and survival, and how can habitats—wild, urban, agricultural, or managed—support organisms facing unfamiliar or changing conditions?",
+      "sources": [
+        {
+          "label": "Polar Bears International",
+          "url": "https://polarbearsinternational.org/news-media/articles/polar-bears-in-zoos/"
+        },
+        {
+          "label": "Polar Bears International",
+          "url": "https://polarbearsinternational.org/news-media/articles/how-do-polar-bears-stay-cool/"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The gut–brain axis and protein misfolding",
+      "description": "Evidence suggests that misfolded proteins, microbes, inflammation, and neural signalling in the gut may contribute to neurodegenerative disease. How can research across organisms and biological scales clarify the gut–brain connection and point toward prevention or treatment?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2019/07/190717132801.htm"
+        },
+        {
+          "label": "Scientific American",
+          "url": "https://www.scientificamerican.com/article/does-parkinsons-begin-in-the-gut/"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6384270/"
+        },
+        {
+          "label": "Science News",
+          "url": "https://www.sciencenews.org/article/parkinsons-disease-gut-microbes-brain-link"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Cell-in-cell interactions and cancer",
+      "description": "Some cells engulf living neighbouring cells, a phenomenon observed in cancers and in other biological contexts. What causes cell-in-cell interactions, what functions might they serve, and how could understanding them improve cancer biology, diagnosis, or treatment?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2017/07/170711085509.htm"
+        },
+        {
+          "label": "EurekAlert!",
+          "url": "https://www.eurekalert.org/news-releases/677102"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4451673/"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Seed dormancy and germination",
+      "description": "Seeds use diverse cues to remain dormant or begin germination. How do environmental conditions, physiology, evolutionary history, and relationships with people shape dormancy and the success of germination, cultivation, restoration, or seed banking?",
+      "sources": [
+        {
+          "label": "Knowable Magazine",
+          "url": "https://knowablemagazine.org/content/article/living-world/2025/seed-banking-to-preserve-rare-plants"
+        },
+        {
+          "label": "PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4036127/"
+        },
+        {
+          "label": "Discover Magazine",
+          "url": "https://www.discovermagazine.com/planet-earth/how-seeds-know-when-to-sprout"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Dengue, chikungunya, and mosquito-borne disease",
+      "description": "Dengue and chikungunya emerge from interactions among viruses, mosquito vectors, hosts, climate, habitats, and human activity. How can biology at different scales help explain transmission, disease, and prevention?",
+      "sources": [
+        {
+          "label": "ScienceDirect",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1877584517301260?via%3Dihub"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6056230/"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/pubmed/23637415"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2018/07/180724114056.htm"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Zika and vector-borne disease",
+      "description": "Zika links viral biology, host responses, mosquito ecology, climate, and public health. What determines where Zika can spread, how infection affects different hosts, and which prevention or treatment strategies are most promising?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/02/210225082429.htm"
+        },
+        {
+          "label": "Canadian Science Publishing",
+          "url": "https://cdnsciencepub.com/doi/10.1139/cjm-2019-0331"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK430981/"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Antibiotic resistance",
+      "description": "An examination of how non-lethal concentrations of antibiotics influence the evolution of resistance in bacteria, could have implications for the development of resistance to new generation antibiotics. New discoveries show antibiotic resistance may predate the use of antibiotics.",
+      "sources": [
+        {
+          "label": "Nature",
+          "url": "https://www.nature.com/nrmicro/journal/v12/n7/pdf/nrmicro3270.pdf"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/01/210107094601.htm"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2022/01/220105111403.htm"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Circadian rhythms",
+      "description": "New research on how the circadian clock controls cellular processes could have implications for treatment of metabolic disorders. In addition, interesting work examines the adaptive significance of circadian clocks.",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2020/11/201130113534.htm"
+        },
+        {
+          "label": "pubs.niaaa.nih.gov",
+          "url": "https://pubs.niaaa.nih.gov/publications/arh25-2/85-93.htm"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Proprioception and sensing body position",
+      "description": "Proprioception allows organisms to sense body position, movement, and force. How do proprioceptive systems differ across organisms, how are sensory signals integrated with movement, and what can failures or adaptations reveal about nervous-system function?",
+      "sources": [
+        {
+          "label": "Nature",
+          "url": "https://www.nature.com/articles/nrn939"
+        },
+        {
+          "label": "Biocultural Evolution",
+          "url": "https://bioculturalevolution.net/2014/10/06/a-nobel-prize-for-understanding-proprioception/"
+        },
+        {
+          "label": "NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK547656/"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Obesogens",
+      "description": "An intriguing hypothesis suggests that exposure of humans to harmful chemicals from the environment, including some that are routinely sprayed on fruits and vegetables, may be a factor in the obesity epidemic. Exploring how these chemicals impact our gut ecology could lead to a better understanding of how chronic illnesses associated with obesity may be triggered by changes in the gut microbiome.",
+      "sources": [
+        {
+          "label": "The Scientist",
+          "url": "https://www.the-scientist.com/features/obesogens-34582"
+        },
+        {
+          "label": "Endocrine Society",
+          "url": "https://www.endocrine.org/topics/edc/what-edcs-are/common-edcs/metabolic"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3295356/"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Mercury in biological systems",
+      "description": "Mercury moves through water, soil, food webs, and bodies, creating biological and community consequences across North America. What determines its uptake, transformation, biomagnification, and effects, and what can be learned from affected places—including Grassy Narrows First Nation—about monitoring, responsibility, remediation, and recovery?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2016/09/160914113933.htm"
+        },
+        {
+          "label": "Biodiversity Research Institute",
+          "url": "https://briwildlife.org/wp-content/uploads/2022/12/FINAL-Mercury-and-Biodiversity-12-05-22-1.pdf"
+        },
+        {
+          "label": "Chemical Institute of Canada",
+          "url": "https://www.cheminst.ca/magazine/article/lake-ecosystems-can-recover-from-mercury-pollution-once-it-stops/"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Regeneration and tissue engineering",
+      "description": "Living systems vary greatly in their capacity to repair or regenerate tissues. How can biological knowledge of cells, extracellular matrices, development, and naturally regenerating organisms inform tissue engineering, transplantation, and drug testing?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/11/211130150456.htm"
+        },
+        {
+          "label": "MIT News",
+          "url": "https://news.mit.edu/2012/engineering-health-tissue-engineering-growing-organs-1214"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9242713/"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "High-altitude adaptation",
+      "description": "High altitude presents organisms with low oxygen, cold, intense radiation, and short growing seasons. How do organisms—including high-altitude human populations—acclimatize or adapt through physiology, behaviour, development, ecology, and evolution?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2017/04/170427141746.htm"
+        },
+        {
+          "label": "PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3972749/"
+        },
+        {
+          "label": "Science",
+          "url": "https://www.science.org/content/article/how-people-andes-evolved-live-high-altitudes"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "The limits of biological performance",
+      "description": "Speed, endurance, strength, and recovery are constrained by trade-offs in anatomy, physiology, energy use, behaviour, and environment. What sets the limits of performance, and why do different organisms solve these challenges in different ways?",
+      "sources": [
+        {
+          "label": "The Conversation",
+          "url": "https://theconversation.com/what-is-the-absolute-limit-for-human-athletes-heres-the-science-63749"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2010/12/101222093200.htm"
+        },
+        {
+          "label": "Medium",
+          "url": "https://elemental.medium.com/are-there-hard-limits-to-human-performance-680924a5cadb"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Longevity and lifespan variation",
+      "description": "Lifespans vary from days to centuries. How do genetics, physiology, life history, ecology, behaviour, and environment interact to shape aging and longevity, and what can unusually long- or short-lived organisms teach us?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2016/10/161005132823.htm"
+        },
+        {
+          "label": "Nature",
+          "url": "https://www.nature.com/articles/nature.2013.14322"
+        },
+        {
+          "label": "The Guardian",
+          "url": "https://www.theguardian.com/science/2019/nov/30/oldest-woman-in-the-world-magical-thinking"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Hibernation and metabolic suppression",
+      "description": "Many organisms survive difficult periods by suppressing metabolism, changing body temperature, or entering dormancy. How are these states controlled, what trade-offs do they create, and could understanding them inform conservation, medicine, or human space travel?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2011/07/110726190101.htm"
+        },
+        {
+          "label": "Smithsonian Magazine",
+          "url": "https://www.smithsonianmag.com/science-nature/can-humans-ever-harness-power-hibernation-180961835/"
+        },
+        {
+          "label": "Live Science",
+          "url": "https://www.livescience.com/53000-pygmy-slow-lorises-hibernate.html"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "The origins of life on Earth",
+      "description": "There is perhaps no more fundamental question in biology than that of the origins of life. One hypothesis proposes that life arose in hydrothermal vents, openings in the ocean floor from which hot, alkaline, mineral-rich water emerges. Interestingly, hydrothermal vents and the unique, often endemic life that inhabit them, were not even discovered until the 1970s.",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/09/210927110510.htm"
+        },
+        {
+          "label": "National Geographic",
+          "url": "https://www.nationalgeographic.com/science/article/oldest-life-earth-iron-fossils-canada-vents-science"
+        },
+        {
+          "label": "Royal Society Publishing",
+          "url": "https://royalsocietypublishing.org/doi/10.1098/rsta.2016.0337"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Astrobiology - Life Beyond Earth",
+      "description": "While no definitive evidence of extraterrestrial life has been found, research in astrobiology is fueled by discoveries like the potential for liquid water on other planets and the existence of extremophiles, organisms that thrive in harsh conditions on Earth.",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2025/04/250416204034.htm"
+        },
+        {
+          "label": "BBC Science Focus",
+          "url": "https://www.sciencefocus.com/space/what-bennu-tells-us-about-alien-life"
+        },
+        {
+          "label": "Live Science",
+          "url": "https://www.livescience.com/63814-astrobiology-all-nasa-missions.html"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Biological effects of road salt",
+      "description": "Winter road salt moves into soils, plants, groundwater, rivers, and lakes. How does increasing salinity affect organisms and ecological relationships, which biological traits predict vulnerability or tolerance, and what alternatives or mitigation strategies are possible?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2014/06/140609153423.htm"
+        },
+        {
+          "label": "Smithsonian Magazine",
+          "url": "https://www.smithsonianmag.com/science-nature/road-salt-can-disrupt-ecosystems-and-endanger-humans-180963393/"
+        },
+        {
+          "label": "University of Toronto",
+          "url": "https://www.utoronto.ca/news/u-t-study-shows-winter-road-salt-poses-year-round-threat-aquatic-life-toronto-s-rivers"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "The biological challenge of salt and water balance",
+      "description": "All organisms must balance water and dissolved ions, but freshwater, marine, terrestrial, and drought-prone environments create very different challenges. How do organisms obtain water, regulate salts, and cope when environmental salinity changes?",
+      "sources": [
+        {
+          "label": "UPI",
+          "url": "https://www.upi.com/Archives/1996/05/29/Drinking-habits-of-ancient-whales/1904833342400/"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2019/02/190208115254.htm"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Thermoregulation in extinct and living animals",
+      "description": "Animals occupy a continuum of strategies for producing, retaining, and exchanging heat. How can evidence from living organisms, fossils, anatomy, chemistry, behaviour, and environments be combined to infer thermoregulation in extinct animals such as dinosaurs?",
+      "sources": [
+        {
+          "label": "Nature",
+          "url": "https://www.nature.com/articles/nature.2014.15399"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2010/05/100524151428.htm"
+        },
+        {
+          "label": "Haaretz",
+          "url": "https://www.haaretz.com/science-and-health/.premium-dinosaurs-were-warm-blooded-groundbreaking-study-finds-1.8533001"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Biological limits of heat tolerance",
+      "description": "Extreme heat challenges cellular function, water balance, behaviour, reproduction, and survival. What sets heat limits across organisms, how do acclimatization and adaptation alter those limits, and how might biological and community knowledge guide responses to a warming climate?",
+      "sources": [
+        {
+          "label": "Live Science",
+          "url": "https://www.livescience.com/55129-how-heat-waves-kill-so-quickly.html"
+        },
+        {
+          "label": "Scientific American",
+          "url": "https://www.scientificamerican.com/article/why-extreme-heat-is-so-deadly/"
+        },
+        {
+          "label": "TIME",
+          "url": "https://time.com/6292615/human-adaptation-to-heat-climate-change/"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Sleep across animals",
+      "description": "Sleep-like states occur in organisms with very different nervous systems and lifestyles. What functions does sleep serve, how is it regulated, and what can variation across organisms reveal about its evolution and biological importance?",
+      "sources": [
+        {
+          "label": "Live Science",
+          "url": "https://www.livescience.com/32162-do-fish-sleep.html"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2017/09/170921141252.htm"
+        },
+        {
+          "label": "BBC Science Focus",
+          "url": "https://www.sciencefocus.com/nature/do-fish-sleep"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Freeze tolerance and survival below 0°C",
+      "description": "Freezing threatens cells and tissues, yet some plants, animals, fungi, and microorganisms survive it. What molecular, physiological, behavioural, and ecological strategies prevent damage or permit recovery after freezing?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2014/01/140106094159.htm"
+        },
+        {
+          "label": "Live Science",
+          "url": "https://www.livescience.com/32175-can-frogs-survive-being-frozen.html"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Animal migration",
+      "description": "There are many notable examples of animal migrations. Bar-tailed godwits fly over 11,000km from Alaska to New Zealand over 8 days without stopping; wildebeests migrate on a loop through Kenya and Tanzania following the seasonal rains but experiencing massive deaths; and monarchs migrate from Canada to Mexico, a journey which was revealed by the help of citizen-scientists. The reasons for these migrations are often mysterious, and, in response to climate change, some species are no longer migrating.",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/09/210907203917.htm"
+        },
+        {
+          "label": "Mashable",
+          "url": "https://in.mashable.com/science/25406/benefits-of-long-distance-animal-migration-are-declining-due-to-climate-change"
+        },
+        {
+          "label": "Nature",
+          "url": "https://www.nature.com/scitable/knowledge/library/animal-migration-13259533"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": "White-nose syndrome and emerging wildlife disease",
+      "description": "White-nose syndrome shows how a pathogen, host biology, environmental conditions, and ecological relationships can combine to cause wildlife declines with consequences beyond the affected species. What controls susceptibility, spread, ecosystem effects, and the success of intervention?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/02/210204101648.htm"
+        },
+        {
+          "label": "Nature",
+          "url": "https://www.nature.com/articles/s41579-020-00493-5"
+        },
+        {
+          "label": "Science",
+          "url": "https://www.science.org/content/article/my-jaw-dropped-bat-loss-linked-death-human-infants"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Dietary antioxidants",
+      "description": "The mitochondrial oxidative stress theory of aging posits that aging is the result of an accumulation of oxidative damage to protein, membranes, and DNA caused by mitochondrially-derived reactive oxygen species (ROS). On this basis, the consumption of dietary antioxidants has been proposed as a method to extend lifespan, hence so many foods are enriched with antioxidants (or their natural antioxidant content is highlighted). However, some contend that the consumption of antioxidants is merely hype.",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2008/04/080415194233.htm"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3996317/"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Bioluminescence across living systems",
+      "description": "Organisms from bacteria and fungi to insects and deep-sea animals produce light. How does bioluminescence work, what functions does it serve, how has it evolved, and how have people applied or interpreted this biological phenomenon?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/05/210511123631.htm"
+        },
+        {
+          "label": "The Conversation",
+          "url": "https://theconversation.com/what-is-bioluminescence-and-how-is-it-used-by-humans-and-in-nature-100472"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Pathogen virulence - \"Live fast and die young, or go slow and steady?\"",
+      "description": "Some pathogens are highly damaging to their hosts, spreading very quickly but also killing almost everyone they infect (e.g. Ebola). Others are equally lethal, but may go without symptoms for years (e.g. HIV/AIDS). Yet others are more benign, and may only mildly or temporarily damage their hosts, only killing ones that are already weak (e.g. the Flu). From a parasite's (evolutionary) perspective, there seem to be pros and cons to all strategies: A parasite essentially uses hosts as a resource to ensure it completes its life cycle and spreads its offspring. But if it causes too much damage and kills the host too quickly, it may not get a chance to do so.",
+      "sources": [
+        {
+          "label": "NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/pubmed/19196383"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2012/04/120421203917.htm"
+        },
+        {
+          "label": "Oxford Academic",
+          "url": "https://academic.oup.com/femsre/article/41/5/679/3844166"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Host-manipulating parasites and parasitoids",
+      "description": "Parasites and parasitoids can be master manipulators. Some can make rats walk up to cats, while others can make grasshoppers drown themselves. Some fungi can make ants climb up plants to position themselves just at the right height, temperature and humidity for the fungus to grow. The list is long, reads like science fiction, and makes one wonder to what degree parasites may be puppet masters driving population and ecosystem dynamics.",
+      "sources": [
+        {
+          "label": "BBC",
+          "url": "https://www.bbc.com/earth/story/20150316-ten-parasites-that-control-minds"
+        },
+        {
+          "label": "University of Otago",
+          "url": "https://www.otago.ac.nz/parasitegroup/PDF%20papers/Poulin2010-ASB.pdf"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2015/03/150318153918.htm"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": "The \"landscape of fear\"",
+      "description": "Imagine you are one of our ancestors, living somewhere on the African savannah. You need to gather food, but you also share the ecosystem with all sorts of predators that will eat you in an instant. You will probably avoid areas that you know are frequented by predators, but that may make you less efficient when searching for food. Most animals face this conundrum every day. They form mental maps of where to go and what to avoid, the \"landscape of fear\". Getting an idea of what this landscape looks like can help ecologists understand the effect of conservation measures.",
+      "sources": [
+        {
+          "label": "The Atlantic",
+          "url": "https://www.theatlantic.com/science/archive/2016/02/nothing-to-fear-except-fear-itself-wolves-and-bears/470532"
+        },
+        {
+          "label": "Canadian Science Publishing",
+          "url": "https://cdnsciencepub.com/doi/10.1139/z01-094"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/08/210803175256.htm"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Forest management and fire",
+      "description": "For millions of years, ecosystems have relied on fire to replenish soils and stimulate plant growth, a practice historically managed through controlled, low-intensity burning by various groups. How does the biodiversity and resilience of forests maintained by controlled burns compare to forests shaped by decades of modern systemic fire suppression?",
+      "sources": [
+        {
+          "label": "Frontiers",
+          "url": "https://kids.frontiersin.org/articles/10.3389/frym.2022.734864"
+        },
+        {
+          "label": "Nature",
+          "url": "https://www.nature.com/articles/d41586-020-00043-2"
+        },
+        {
+          "label": "Scientific American",
+          "url": "https://www.scientificamerican.com/article/how-wildfires-can-actually-help-the-environment/"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "title": "The impact of wildfires on animals and plants",
+      "description": "As wildfires force mass evacuations and destroy homes and businesses, one cannot help but wonder what effect wildfires have on the animals and plants inhabiting those same regions. Do they evacuate? Do they die? And what happens to the flora and fauna of a region in the aftermath of a wildfire?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2023/04/230413154305.htm"
+        },
+        {
+          "label": "Nature",
+          "url": "https://www.nature.com/articles/d41586-020-00043-2"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34989061/"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Energy balance in changing environments",
+      "description": "Environmental change can disrupt when, where, and how organisms acquire and spend energy. How do anatomy, physiology, behaviour, food webs, and seasonal timing shape energy balance and vulnerability? Polar bears and declining sea ice provide one important case study.",
+      "sources": [
+        {
+          "label": "Oxford Academic",
+          "url": "https://academic.oup.com/jmammal/article/91/6/1517/892355/Comments-in-response-to-Estimating-the-energetic"
+        },
+        {
+          "label": "Nature",
+          "url": "https://www.nature.com/articles/ncomms1183"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/10/211027122011.htm"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Allee effects and the benefits of group living",
+      "description": "In many organisms, individual survival or reproduction declines when a population becomes too small or sparse. What biological mechanisms create Allee effects, how do they differ among living systems, and how should they influence conservation, restoration, or management?",
+      "sources": [
+        {
+          "label": "ScienceDirect",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0169534799016833"
+        },
+        {
+          "label": "ScienceDirect",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0169534706003818"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "title": "The theory of autumn colors",
+      "description": "At some point in your life, you have probably learned that the brilliant autumn displays of color are simply a byproduct of chlorophyll breaking down in preparation for the winter. An alternative, or complementary, hypothesis is that autumn colors function as an active and honest signal of a tree's defensive abilities against parasites. Trees invest in being colorful.",
+      "sources": [
+        {
+          "label": "NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1088768/"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1691721/"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2001/10/011001072513.htm"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Transmissible cancers and disease evolution",
+      "description": "Rare cancers can pass between individuals and behave like infectious lineages. What makes transmissible cancer possible, how do hosts and tumours coevolve, and what are the consequences for cells, individuals, populations, and conservation? Tasmanian devil facial tumour disease is a key case study.",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2020/08/200806101750.htm"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7345153/"
+        },
+        {
+          "label": "The Scientist",
+          "url": "https://www.the-scientist.com/news-opinion/deadly-facial-tumors-spur-tasmanian-devil-evolution-study-68899"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Climate change and malaria",
+      "description": "Temperature affects malaria transmission in multiple ways. For example, warmer temperatures increase the development rates of the malaria parasite and its mosquito vector, suggesting that warmer temperatures could lead to more disease occurrence in humans. On the other hand, warmer temperatures also tend to increase the mortality rates of both the parasite and mosquitoes, which would suggest that warmer temperatures would lead to less disease in humans. Understanding how malaria incidence will change with a warmer climate is a non-trivial but highly relevant problem for proactive health planning.",
+      "sources": [
+        {
+          "label": "Wiley",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1890/08-0079.1"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/pubmed/23908230"
+        },
+        {
+          "label": "Wiley",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/ele.12015"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/07/210707185332.htm"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Noise pollution and biological communication",
+      "description": "Many organisms use sound to navigate, find food or mates, avoid danger, and communicate. How does human-made noise alter sensory systems, behaviour, physiology, ecological relationships, and survival in aquatic or terrestrial environments?",
+      "sources": [
+        {
+          "label": "The Guardian",
+          "url": "https://www.theguardian.com/environment/2016/feb/02/ships-noise-is-serious-problem-for-killer-whales-and-dolphins-report-finds"
+        },
+        {
+          "label": "Dalhousie University",
+          "url": "https://whitelab.biology.dal.ca/lw/publications/Weilgart%202007%20CJZ%20noise%20review.pdf"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Controlling insect populations",
+      "description": "Some insects may be pests, damaging agricultural crops, for example, or transmitting diseases. The importance of controlling such pests has led researchers to try multiple chemical and biological strategies: spraying insecticides, attracting insects into traps using pheromones, or introducing natural predators or diseases of the pest are only a few of them. Combining multiple approaches is often the best strategy, but there is no single recipe that fits all scenarios.",
+      "sources": [
+        {
+          "label": "Owlcation",
+          "url": "https://owlcation.com/agriculture/Biological-vs-Chemical-Pest-Control"
+        },
+        {
+          "label": "NPR",
+          "url": "https://www.npr.org/sections/thetwo-way/2017/07/21/538470321/to-shrink-the-mosquito-population-scientists-are-releasing-20-million-of-them"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/pubmed/9444755"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Microplastics in biological systems",
+      "description": "Microplastics—plastic particles smaller than 5 mm—are found in water, soil, air, food webs, and bodies. How do their size, chemistry, movement, uptake, and biological effects vary among organisms and environments?",
+      "sources": [
+        {
+          "label": "Science",
+          "url": "https://www.science.org/doi/10.1126/science.1251568"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/04/210429133929.htm"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Climate change and Lyme disease",
+      "description": "Lyme-disease is caused by the bacterium Borrelia burgdorferi and is transmitted by ticks. A warming climate is creating increasingly suitable conditions for the disease to establish in northern areas where it previously did not occur. Lyme disease cases have been on the rise in Canada, creating new challenges for public health surveillance, disease control, and public health management. Disease control is difficult, however, due to the multiple interacting ecological factors that drive the disease dynamics.",
+      "sources": [
+        {
+          "label": "parasitesandvectors.biomedcentral.com",
+          "url": "https://parasitesandvectors.biomedcentral.com/articles/10.1186/1756-3305-6-1"
+        },
+        {
+          "label": "CMAJ",
+          "url": "https://www.cmaj.ca/content/180/12/1221"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Navigation and disrupted migration",
+      "description": "Migratory organisms navigate across unfamiliar landscapes using diverse sensory cues and inherited or learned information. How does navigation work, and how do habitat change, climate, pollution, or other disturbances affect migration? Monarch butterflies provide one possible case study.",
+      "sources": [
+        {
+          "label": "Cell Press",
+          "url": "https://www.cell.com/current-biology/fulltext/S0960-9822(18)30253-7"
+        },
+        {
+          "label": "Frontiers",
+          "url": "https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2018.00086/full"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/06/210608154419.htm"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Ebola and viral spillover",
+      "description": "Ebolaviruses connect viral evolution, reservoir hosts, wildlife ecology, human biology, land use, community knowledge, and public health. What drives spillover and transmission, how do infections affect different hosts, and how can prevention and response strategies be designed responsibly?",
+      "sources": [
+        {
+          "label": "World Health Organization",
+          "url": "https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026"
+        },
+        {
+          "label": "Canadian Red Cross",
+          "url": "https://www.redcross.ca/how-we-help/current-emergency-responses/democratic-republic-of-congo-ebola-outbreak-2026"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "title": "Tool use in animals",
+      "description": "From hammers to saws, knives to fishing poles, and backhoes to dump trucks, humans have developed several tools to aid their daily chores. But are humans the only animals that utilize tools? And does tool use reflect a species' intelligence?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2017/05/170516091141.htm"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7521350/"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Medicinal plants, knowledge, and biological activity",
+      "description": "People have long developed place-based knowledge about plants used for health and healing. How do plant chemistry, physiology, ecology, cultivation, and relationships with knowledgeable communities shape biological activity and responsible research? Projects involving Indigenous Knowledge must use appropriate sources and respect community ownership and protocols.",
+      "sources": [
+        {
+          "label": "PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3316145/"
+        },
+        {
+          "label": "Smithsonian Magazine",
+          "url": "https://www.smithsonianmag.com/science-nature/how-indigenous-knowledge-is-transforming-botany-180976543/"
+        },
+        {
+          "label": "CBC",
+          "url": "https://www.cbc.ca/news/indigenous/traditional-medicine-science-health-1.5432198"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "title": "Environment-dependent sex determination",
+      "description": "Sex determination in humans is chromosome-based: XX zygotes will develop into females, and XY zygotes will develop into males. (Notwithstanding, the Internet is full of webpages describing how to conceive a boy or a girl.) There are some species, however, where sex determination is based on some aspect of the environment, such as temperature and species density. What are the advantages and disadvantages of such a system for sex determination, esp. in the face of a warming planet?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2019/08/190801131435.htm"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2008/07/080729234256.htm"
+        },
+        {
+          "label": "Fertility and Sterility",
+          "url": "https://www.fertstert.org/article/S0015-0282(03)03206-0/fulltext"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "title": "The evolution and biology of parental care",
+      "description": "Parental care ranges from none to prolonged and cooperative investment, and occurs in many animal groups. What ecological, physiological, developmental, behavioural, and evolutionary factors favour different forms of care?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2017/05/170518143855.htm"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2018/08/180801102603.htm"
+        },
+        {
+          "label": "Royal Society Publishing",
+          "url": "https://royalsocietypublishing.org/doi/10.1098/rspb.2020.1759"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "title": "Insects as sustainable food sources",
+      "description": "While the majority of North Americans meet their demands for protein by consuming beef, pork, and chicken, a comprehensive analysis published in Science suggested that avoiding meat is the single biggest way to reduce your environmental impact on the planet. Edible insects show great potential as an environmentally friendly choice for food, but they can possibly feed a global population, estimated to reach 9 billion by 2050?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2020/08/200831112318.htm"
+        },
+        {
+          "label": "Nature",
+          "url": "https://www.nature.com/articles/521395a"
+        },
+        {
+          "label": "ScienceDirect",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S1466856412001452"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "title": "Renewable energy and wildlife",
+      "description": "Renewable-energy infrastructure can affect organisms through collision, habitat change, noise, altered movement, or new ecological opportunities. How can knowledge of organismal biology, landscapes, and human priorities guide the design and placement of wind-energy systems?",
+      "sources": [
+        {
+          "label": "BBC",
+          "url": "https://www.bbc.com/future/article/20200302-how-do-wind-farms-affect-bats-birds-and-other-wildlife"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2016/09/160929143808.htm"
+        },
+        {
+          "label": "The Conversation",
+          "url": "https://theconversation.com/wind-turbines-arent-quite-apex-predators-but-the-truth-is-far-more-interesting-106480"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "title": "Environmental enrichment and behavioural welfare",
+      "description": "Animals in human care may lack opportunities, choices, or challenges found in other environments. How can evidence about sensory systems, cognition, behaviour, ecology, and individual needs guide enrichment and the assessment of welfare across species and settings?",
+      "sources": [
+        {
+          "label": "Faunalytics",
+          "url": "https://faunalytics.org/environmental-enrichment-improves-zoo-carnivores-positive-behaviors/"
+        },
+        {
+          "label": "Wild Enrichment",
+          "url": "https://wildenrichment.com/articles/a-modern-guide-to-environmental-enrichment-in-zoos-and-aquariums/"
+        },
+        {
+          "label": "PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11171006/"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "title": "Ecosystem impacts of nuclear radiation",
+      "description": "There have been several large-scale nuclear power plant accidents since the 1960s (e.g., Chernobyl, Fukushima). How do these accidents impact the flora and fauna surrounding the plant and beyond?",
+      "sources": [
+        {
+          "label": "Nature",
+          "url": "https://www.nature.com/articles/news.2011.326"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/10/211015111210.htm"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "title": "Ecosystem impacts of oil spills",
+      "description": "There are several long-distance oil pipelines that traverse across Canada, and, according to records maintained by the The National Energy Board since the mid-20th century, millions of litres of oil have spilled from these pipelines at various locations, contaminating the environment. What are the impacts of oil spills on animals, plants, fungi, and micro-organisms? What role, if any, can living organisms play in terms of environmental remediation of oil spills?",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2021/09/210908180633.htm"
+        },
+        {
+          "label": "The Conversation",
+          "url": "https://theconversation.com/nature-can-heal-itself-after-an-oil-spill-it-just-needs-a-little-help-98054"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "title": "The role of artificial intelligence (Al) in unraveling the secrets of biology",
+      "description": "While many undergraduate students have come to think of Al as \"that thing my prof and TA told me I better not be using for my assignments\", many scientists are curious about how Al might have a beneficial role to play in biological research, conservation, medicine, etc. Others are worried that Al may hamper scientific progress or unleash unpredictable disasters.",
+      "sources": [
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2024/10/241023130924.htm"
+        },
+        {
+          "label": "Nature",
+          "url": "https://www.nature.com/articles/s41592-024-02391-7"
+        },
+        {
+          "label": "EMBL",
+          "url": "https://www.embl.org/news/lab-matters/ai-in-biology-and-health-opportunities-and-challenges/"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "title": "Nutritional ecology and managed diets",
+      "description": "Diet involves nutrients, toxins, physical processing, foraging behaviour, microbes, seasonal availability, and cultural or management decisions. How can nutritional ecology guide diets for organisms in human care while accounting for species differences and natural feeding biology?",
+      "sources": [
+        {
+          "label": "Spesfeed",
+          "url": "https://spesfeed.com/2014/04/the-nutritionists-role-in-the-management-and-care-of-captive-wild-animals/"
+        },
+        {
+          "label": "The Atlantic",
+          "url": "https://www.theatlantic.com/science/archive/2018/01/zoo-diets/551543/"
+        },
+        {
+          "label": "National Geographic",
+          "url": "https://www.nationalgeographic.com/animals/article/what-do-zoo-animals-eat"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "title": "Psychoactive substances and animal behaviour",
+      "description": "Animals encounter fermented foods, plant toxins, and other compounds that affect nervous-system function. Which claims about deliberate use are supported by evidence, how do effects vary across organisms, and what might this reveal about ecology, behaviour, reward, and addiction?",
+      "sources": [
+        {
+          "label": "BBC",
+          "url": "https://www.bbc.com/future/article/20140528-do-animals-take-drugs"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2022/04/220401141345.htm"
+        },
+        {
+          "label": "Psychedelic Spotlight",
+          "url": "https://psychedelicspotlight.com/animals-that-eat-psychedelics-trip/"
+        },
+        {
+          "label": "Australian Geographic",
+          "url": "https://www.australiangeographic.com.au/topics/wildlife/2011/10/animals-getting-high-10-common-drunks/"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "title": "Surviving mass extinctions",
+      "description": "While some controversy remains regarding whether or not we are currently experiencing the Earth's sixth mass extinction, there is no controversy that Earth has experienced five mass extinction events previously, the last one taking place about 65 million years ago and notoriously wiping out the dinosaurs. While between 75-95% of all species were lost in these mass extinction events, that also means that 5-25% of all species survived. Why are some species able to survive these mass extinction events? And do these species provide lessons for humanity as its own existence is threatened?",
+      "sources": [
+        {
+          "label": "Our World in Data",
+          "url": "https://ourworldindata.org/mass-extinctions"
+        },
+        {
+          "label": "BBC",
+          "url": "https://www.bbc.com/future/article/20220812-dinosaur-extinction-why-did-mammals-survive#:\\~:text=%22So%20the%20hypothesis%20that%20came.hunker%20down%20for%20a%20bit.%22"
+        },
+        {
+          "label": "University of Michigan",
+          "url": "https://news.umich.edu/study-suggests-ground-dwelling-mammals-survived-mass-extinction-66-million-years-ago/"
+        },
+        {
+          "label": "Scientific American",
+          "url": "https://www.scientificamerican.com/article/ability-to-take-on-diverse-roles-may-be-key-to-which-animals-survive-mass-extinction/"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "title": "Urban wildlife and rat population growth",
+      "description": "Cities create novel habitats, food sources, risks, and relationships among people and other organisms. Why do rats thrive in many urban environments, how might climate change alter their populations, and what can biology and community knowledge contribute to effective and ethical management?",
+      "sources": [
+        {
+          "label": "CBC",
+          "url": "https://www.cbc.ca/news/science/more-bad-news-for-rat-infested-cities-climate-change-is-making-it-worse-1.7447368"
+        },
+        {
+          "label": "NCBI",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11784805/"
+        },
+        {
+          "label": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2018/11/181128141723.htm"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "title": "Zoonotic disease, One Health, and biosecurity",
+      "description": "Human, animal, plant, and ecosystem health are interconnected. What biological and social factors drive pathogen spillover among species, and how can surveillance, habitat stewardship, animal care, public health, and biosecurity reduce risk without ignoring local knowledge or ecological consequences?",
+      "sources": [
+        {
+          "label": "Mongabay",
+          "url": "https://news.mongabay.com/list/zoonotic-diseases/"
+        },
+        {
+          "label": "World Health Organization",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/zoonoses"
+        },
+        {
+          "label": "CDC",
+          "url": "https://www.cdc.gov/one-health/about/index.html"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "title": "Assemble Your BIOB90 Team",
+    "intro": "Plan a weekend getaway and discover the Avenger whose teamwork style most closely resembles yours. There are no better or worse results: the purpose is to help assemble groups with complementary approaches.",
+    "traits": [
+      {
+        "id": "coordinator",
+        "name": "Coordination",
+        "description": "Creating structure, momentum, and shared accountability"
+      },
+      {
+        "id": "analyst",
+        "name": "Analysis",
+        "description": "Examining evidence carefully and spotting important details"
+      },
+      {
+        "id": "innovator",
+        "name": "Innovation",
+        "description": "Generating original ideas and making unexpected connections"
+      },
+      {
+        "id": "connector",
+        "name": "Connection",
+        "description": "Building trust, inclusion, and productive communication"
+      },
+      {
+        "id": "adapter",
+        "name": "Adaptability",
+        "description": "Responding calmly and effectively when circumstances change"
+      }
+    ],
+    "outcomes": [
+      {
+        "id": "captain-america",
+        "name": "Captain America",
+        "tagline": "The dependable coordinator",
+        "description": "You help a team establish a plan, divide responsibilities fairly, and keep its commitments.",
+        "watchOut": "Leave room for the plan to change when a teammate finds a better route.",
+        "profile": {
+          "coordinator": 4,
+          "analyst": 1,
+          "innovator": 1,
+          "connector": 3,
+          "adapter": 1
+        }
+      },
+      {
+        "id": "iron-man",
+        "name": "Iron Man",
+        "tagline": "The inventive problem-solver",
+        "description": "You bring ambitious ideas, technical curiosity, and a willingness to test unconventional solutions.",
+        "watchOut": "Make sure the whole team understands and owns the idea before racing ahead.",
+        "profile": {
+          "coordinator": 1,
+          "analyst": 3,
+          "innovator": 4,
+          "connector": 1,
+          "adapter": 1
+        }
+      },
+      {
+        "id": "black-widow",
+        "name": "Black Widow",
+        "tagline": "The observant adapter",
+        "description": "You read situations carefully, notice what others miss, and adjust without losing sight of the objective.",
+        "watchOut": "Share your observations early rather than quietly carrying too much yourself.",
+        "profile": {
+          "coordinator": 1,
+          "analyst": 3,
+          "innovator": 1,
+          "connector": 1,
+          "adapter": 4
+        }
+      },
+      {
+        "id": "thor",
+        "name": "Thor",
+        "tagline": "The energizing teammate",
+        "description": "You bring optimism, warmth, and momentum that can help a group persist through demanding work.",
+        "watchOut": "Pair enthusiasm with enough detail to turn a bold direction into a workable plan.",
+        "profile": {
+          "coordinator": 1,
+          "analyst": 1,
+          "innovator": 1,
+          "connector": 4,
+          "adapter": 3
+        }
+      },
+      {
+        "id": "bruce-banner",
+        "name": "Bruce Banner",
+        "tagline": "The deep analyst",
+        "description": "You dig beneath the surface, interrogate evidence, and help the group avoid conclusions that the data cannot support.",
+        "watchOut": "Do not wait for perfect certainty before sharing a useful provisional conclusion.",
+        "profile": {
+          "coordinator": 1,
+          "analyst": 4,
+          "innovator": 2,
+          "connector": 1,
+          "adapter": 2
+        }
+      },
+      {
+        "id": "spider-man",
+        "name": "Spider-Man",
+        "tagline": "The curious all-rounder",
+        "description": "You learn quickly, connect ideas playfully, and can move among different tasks as the team needs you.",
+        "watchOut": "Choose priorities deliberately so versatility does not become overcommitment.",
+        "profile": {
+          "coordinator": 1,
+          "analyst": 1,
+          "innovator": 3,
+          "connector": 2,
+          "adapter": 3
+        }
+      },
+      {
+        "id": "captain-marvel",
+        "name": "Captain Marvel",
+        "tagline": "The decisive stabilizer",
+        "description": "You are comfortable taking responsibility and moving the group forward when the path is uncertain.",
+        "watchOut": "Invite quieter teammates into the decision before taking the lead.",
+        "profile": {
+          "coordinator": 3,
+          "analyst": 2,
+          "innovator": 1,
+          "connector": 1,
+          "adapter": 3
+        }
+      },
+      {
+        "id": "black-panther",
+        "name": "Black Panther",
+        "tagline": "The strategic collaborator",
+        "description": "You combine careful judgment, long-range thinking, and respect for the perspectives around the table.",
+        "watchOut": "Translate strategy into early concrete actions so the group can build momentum.",
+        "profile": {
+          "coordinator": 3,
+          "analyst": 3,
+          "innovator": 1,
+          "connector": 2,
+          "adapter": 1
+        }
+      }
+    ],
+    "questions": [
+      {
+        "id": "destination",
+        "prompt": "First, what kind of destination sounds best?",
+        "options": [
+          {
+            "id": "culture-city",
+            "label": "A walkable city with museums, neighbourhoods, and a carefully chosen home base",
+            "scores": {
+              "coordinator": 2,
+              "analyst": 1,
+              "connector": 1
+            }
+          },
+          {
+            "id": "quiet-cabin",
+            "label": "A quiet cabin where everyone can recharge and explore at their own pace",
+            "scores": {
+              "analyst": 2,
+              "adapter": 1,
+              "connector": 1
+            }
+          },
+          {
+            "id": "unknown-place",
+            "label": "Somewhere none of us has visited—we will discover what makes it interesting",
+            "scores": {
+              "innovator": 2,
+              "adapter": 2
+            }
+          },
+          {
+            "id": "festival",
+            "label": "A lively festival or event with lots for the group to experience together",
+            "scores": {
+              "connector": 2,
+              "adapter": 1,
+              "innovator": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "planning",
+        "prompt": "The group chat asks who wants to organize. What do you do?",
+        "options": [
+          {
+            "id": "shared-plan",
+            "label": "Build a shared itinerary with times, costs, and responsibilities",
+            "scores": {
+              "coordinator": 3,
+              "analyst": 1
+            }
+          },
+          {
+            "id": "research",
+            "label": "Research the best options and send everyone a concise comparison",
+            "scores": {
+              "analyst": 3,
+              "innovator": 1
+            }
+          },
+          {
+            "id": "bold-pitch",
+            "label": "Pitch one memorable idea that turns an ordinary trip into an adventure",
+            "scores": {
+              "innovator": 3,
+              "adapter": 1
+            }
+          },
+          {
+            "id": "preferences",
+            "label": "Ask what everyone wants and help find the choice that includes them",
+            "scores": {
+              "connector": 3,
+              "adapter": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "travel-snag",
+        "prompt": "A cancellation disrupts the first day. Your instinct is to…",
+        "options": [
+          {
+            "id": "reassign",
+            "label": "Reset the plan, assign the urgent tasks, and get the day moving again",
+            "scores": {
+              "coordinator": 3,
+              "adapter": 1
+            }
+          },
+          {
+            "id": "diagnose",
+            "label": "Work out exactly what changed before choosing the best alternative",
+            "scores": {
+              "analyst": 3,
+              "adapter": 1
+            }
+          },
+          {
+            "id": "improvise",
+            "label": "Turn the disruption into a completely different—and possibly better—day",
+            "scores": {
+              "innovator": 2,
+              "adapter": 2
+            }
+          },
+          {
+            "id": "steady-team",
+            "label": "Check how everyone is doing and keep frustration from taking over",
+            "scores": {
+              "connector": 3,
+              "adapter": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "decision",
+        "prompt": "The group cannot agree on the main activity. How do you help?",
+        "options": [
+          {
+            "id": "facilitate",
+            "label": "Clarify the options and facilitate a quick, fair decision",
+            "scores": {
+              "coordinator": 2,
+              "connector": 2
+            }
+          },
+          {
+            "id": "evidence",
+            "label": "Compare travel time, cost, reviews, and what each option actually offers",
+            "scores": {
+              "analyst": 3,
+              "coordinator": 1
+            }
+          },
+          {
+            "id": "hybrid",
+            "label": "Invent a hybrid plan that captures the best part of two ideas",
+            "scores": {
+              "innovator": 3,
+              "connector": 1
+            }
+          },
+          {
+            "id": "read-room",
+            "label": "Read the room and suggest the compromise people will genuinely enjoy",
+            "scores": {
+              "adapter": 2,
+              "connector": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "meal",
+        "prompt": "Choose the group’s Saturday dinner.",
+        "options": [
+          {
+            "id": "reservation",
+            "label": "A well-reviewed restaurant reserved ahead, with options for everyone",
+            "scores": {
+              "coordinator": 2,
+              "connector": 2
+            }
+          },
+          {
+            "id": "local-specialty",
+            "label": "A local specialty I researched because food should teach us something about the place",
+            "scores": {
+              "analyst": 2,
+              "innovator": 1,
+              "adapter": 1
+            }
+          },
+          {
+            "id": "market",
+            "label": "A food market where everyone can choose something and we can share",
+            "scores": {
+              "connector": 2,
+              "adapter": 2
+            }
+          },
+          {
+            "id": "cook",
+            "label": "Ingredients from a local shop, then we improvise a meal together",
+            "scores": {
+              "innovator": 2,
+              "coordinator": 1,
+              "connector": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "free-afternoon",
+        "prompt": "You unexpectedly gain a free afternoon. What sounds best?",
+        "options": [
+          {
+            "id": "guided",
+            "label": "A museum, science centre, or guided tour with something new to learn",
+            "scores": {
+              "analyst": 2,
+              "innovator": 1,
+              "connector": 1
+            }
+          },
+          {
+            "id": "challenge",
+            "label": "A hike, paddle, escape room, or other shared challenge",
+            "scores": {
+              "adapter": 2,
+              "connector": 2
+            }
+          },
+          {
+            "id": "mini-plan",
+            "label": "I can organize a compact itinerary so we make the most of it",
+            "scores": {
+              "coordinator": 3,
+              "connector": 1
+            }
+          },
+          {
+            "id": "wander",
+            "label": "Wander without a fixed route and see what hidden place we discover",
+            "scores": {
+              "innovator": 2,
+              "adapter": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "shared-space",
+        "prompt": "You are sharing accommodations with several people. You tend to…",
+        "options": [
+          {
+            "id": "expectations",
+            "label": "Set a few expectations early so small issues never become big ones",
+            "scores": {
+              "coordinator": 3,
+              "connector": 1
+            }
+          },
+          {
+            "id": "considerate",
+            "label": "Notice routines and quietly avoid making life harder for anyone",
+            "scores": {
+              "analyst": 2,
+              "connector": 2
+            }
+          },
+          {
+            "id": "flexible",
+            "label": "Stay flexible—different people need different things",
+            "scores": {
+              "adapter": 3,
+              "connector": 1
+            }
+          },
+          {
+            "id": "atmosphere",
+            "label": "Create the playlist, snacks, or game that makes the space feel shared",
+            "scores": {
+              "connector": 2,
+              "innovator": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "low-energy",
+        "prompt": "By Sunday morning, the group is tired and losing momentum. You…",
+        "options": [
+          {
+            "id": "priorities",
+            "label": "Narrow the plan to the two priorities that matter most",
+            "scores": {
+              "coordinator": 3,
+              "analyst": 1
+            }
+          },
+          {
+            "id": "blocker",
+            "label": "Figure out what is draining the group and solve that problem",
+            "scores": {
+              "analyst": 3,
+              "adapter": 1
+            }
+          },
+          {
+            "id": "change-format",
+            "label": "Change the format completely; a fresh approach can reset the energy",
+            "scores": {
+              "innovator": 2,
+              "adapter": 2
+            }
+          },
+          {
+            "id": "check-in",
+            "label": "Check in with everyone and rebuild the sense that we are doing this together",
+            "scores": {
+              "connector": 3,
+              "coordinator": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "contribution",
+        "prompt": "Which contribution would you most naturally make to the trip?",
+        "options": [
+          {
+            "id": "timeline",
+            "label": "Keeping the timeline and shared responsibilities from slipping",
+            "scores": {
+              "coordinator": 3,
+              "analyst": 1
+            }
+          },
+          {
+            "id": "deep-research",
+            "label": "Finding the reliable information that prevents weak decisions",
+            "scores": {
+              "analyst": 3,
+              "innovator": 1
+            }
+          },
+          {
+            "id": "memorable-angle",
+            "label": "Finding the original angle that makes the experience memorable",
+            "scores": {
+              "innovator": 3,
+              "connector": 1
+            }
+          },
+          {
+            "id": "belonging",
+            "label": "Making sure everyone is heard and feels part of the group",
+            "scores": {
+              "connector": 3,
+              "adapter": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "opportunity",
+        "prompt": "A surprising opportunity appears, but it would change the plan. What wins you over?",
+        "options": [
+          {
+            "id": "risk-check",
+            "label": "The evidence shows the benefits justify the risks",
+            "scores": {
+              "analyst": 3,
+              "coordinator": 1
+            }
+          },
+          {
+            "id": "say-yes",
+            "label": "It is exactly the kind of unexpected experience we came for",
+            "scores": {
+              "adapter": 2,
+              "innovator": 2
+            }
+          },
+          {
+            "id": "workable",
+            "label": "We can revise the plan without abandoning our important commitments",
+            "scores": {
+              "coordinator": 2,
+              "adapter": 1,
+              "connector": 1
+            }
+          },
+          {
+            "id": "shared-excitement",
+            "label": "The whole group lights up when we talk about doing it",
+            "scores": {
+              "connector": 3,
+              "innovator": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
