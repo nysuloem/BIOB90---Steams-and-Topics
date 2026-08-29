@@ -199,7 +199,6 @@ content.quiz.questions = [
       { id: 'closest-friends', label: 'A few close friends who already know one another well', scores: { connector: 3, coordinator: 1 } },
       { id: 'family', label: 'Members of my family', scores: { connector: 2, coordinator: 2 } },
       { id: 'new-people', label: 'People I do not know well yet—it could be a good way to connect', scores: { connector: 2, adapter: 2 } },
-      { id: 'one-friend', label: 'One trusted friend; a smaller trip is easier to plan and enjoy', scores: { analyst: 2, coordinator: 1, connector: 1 } },
       { id: 'open-invite', label: 'Whoever is excited and available at the last minute', scores: { adapter: 2, innovator: 2 } }
     ]
   },
