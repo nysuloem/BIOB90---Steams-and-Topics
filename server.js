@@ -43,6 +43,19 @@ class SubmissionStore {
         delete record.studentNumber;
         record.studentNumberLast4 = studentNumberLast4;
         record.recordKey = recordKey;
+        const previousAnswers = record.quizAnswers || {};
+        const quizAnswers = {};
+        for (const [questionId, answerId] of Object.entries(previousAnswers)) {
+          const question = questionMap.get(questionId);
+          if (question?.options.some((option) => option.id === answerId)) quizAnswers[questionId] = answerId;
+        }
+        if (Object.keys(quizAnswers).length !== Object.keys(previousAnswers).length) migrated = true;
+        record.quizAnswers = quizAnswers;
+        Object.assign(record, scoreQuiz(quizAnswers));
+        if (Object.keys(quizAnswers).length !== content.quiz.questions.length && record.submittedAt) {
+          record.submittedAt = null;
+          migrated = true;
+        }
         this.records.set(recordKey, record);
       }
       if (migrated) await this.persist();
