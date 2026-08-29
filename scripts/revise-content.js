@@ -168,6 +168,33 @@ topic(56, {
   ]
 });
 
+const descriptionRevisions = {
+  1: 'Why have some species entered long-term relationships of domestication with people while others have not? What makes domestication possible, where are its limits, and how does it differ from taming or captive breeding?',
+  5: 'Seeds use diverse cues to remain dormant or begin germination. What determines when a seed waits or grows, why do these strategies vary, and how can that knowledge support cultivation, restoration, or seed banking?',
+  6: 'Mosquitoes can transmit viruses, parasites, and other pathogens, but only some species and populations are effective vectors. What determines whether transmission succeeds, how might changing conditions alter risk, and which vulnerabilities could disease-control efforts exploit?',
+  13: 'Living systems vary greatly in their capacity to repair or replace damaged structures. Why can some rebuild functional tissues while others heal with scars, and how could those natural solutions improve tissue engineering, transplantation, or drug testing?',
+  14: 'High altitude exposes organisms to low oxygen, cold, intense radiation, and short growing seasons. How do organisms—including high-altitude human populations—survive and reproduce under these conditions, and what costs or limits accompany their solutions?',
+  15: 'Speed, endurance, strength, and recovery cannot all be maximized at once. What limits biological performance, what trade-offs arise among different kinds of performance, and why have organisms arrived at such different solutions?',
+  16: 'Lifespans vary from days to centuries. Why do organisms age at such different rates, what allows some to preserve function or resist damage for unusually long periods, and what can these extremes teach us about the limits of lifespan?',
+  22: 'Animals occupy a continuum of strategies for producing, retaining, and exchanging heat. How can evidence from living organisms and the fossil record be combined to infer how extinct animals such as dinosaurs regulated body temperature?',
+  23: 'Extreme heat can disrupt biological function, reproduction, and survival. Why can some organisms tolerate conditions that are lethal to others, what happens as their limits are approached, and how might this knowledge guide responses to a warming climate?',
+  25: 'Freezing threatens living structures, yet some plants, animals, fungi, and microorganisms survive below 0°C. How do they prevent or tolerate damage, what trade-offs accompany these solutions, and what determines whether recovery is possible?',
+  32: 'Animals often trade access to food, mates, or shelter against the risk of encountering predators. How does perceived danger change where and when animals carry out these activities, what wider consequences follow, and how can a landscape of fear be detected or tested?',
+  35: 'Environmental change can disrupt when, where, and how organisms obtain and spend energy. How do organisms balance their energy budgets, what makes some especially vulnerable to disruption, and what can cases such as polar bears and declining sea ice reveal?',
+  40: 'Many organisms use sound to navigate, find food or mates, avoid danger, and communicate. How does human-made noise interfere with these tasks, which organisms or settings are most vulnerable, and what consequences can spread beyond the individuals directly exposed?',
+  45: 'Organisms can avoid detection, imitate other species, or manipulate how receivers interpret signals. How are camouflage and mimicry produced, why do they succeed in some settings but fail in others, and how do other organisms respond to being deceived?',
+  47: 'Plants produce diverse compounds that can affect cells, microbes, parasites, and whole organisms. What determines whether a plant preparation has a biological effect, why might results vary, and how can promising claims be tested safely and responsibly?',
+  49: 'Parental care ranges from none to prolonged and cooperative investment, and occurs in many animal groups. Why do such different forms of care arise, what costs and benefits do they create for parents and offspring, and when is care likely to be favoured?',
+  51: 'Renewable-energy infrastructure can cause collisions, alter habitats and movement, create noise, or offer new opportunities for wildlife. Which effects matter most in different settings, and how can wind-energy systems be designed and placed to reduce harm?',
+  52: 'Animals in human care may lack opportunities, choices, or challenges available in other environments. What makes enrichment genuinely beneficial, how should welfare be assessed across different animals and settings, and why might the same intervention help one individual but not another?',
+  56: 'Animals differ greatly in what, when, and how they eat. How can diets for animals in human care meet nutritional needs while allowing natural feeding patterns, accounting for individual and seasonal variation, and avoiding unintended harm?',
+  57: 'Animals encounter fermented foods, plant toxins, and other substances that can alter their actions or internal state. Which claims about deliberate use are supported by evidence, why do responses differ among organisms, and what can these encounters reveal about motivation and dependence?'
+};
+
+for (const [number, description] of Object.entries(descriptionRevisions)) {
+  content.topics[Number(number) - 1].description = description;
+}
+
 const additions = {
   9: { label: 'National Institute of General Medical Sciences', url: 'https://www.nigms.nih.gov/education/fact-sheets/Pages/circadian-rhythms.aspx' },
   21: { label: 'PubMed Central', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4923318/' },
