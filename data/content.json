@@ -5,21 +5,33 @@
       "title": "Two-Eyed Seeing (Etuaptmumk)",
       "shortTitle": "Two-Eyed Seeing",
       "description": "Bring the strengths of Indigenous ways of knowing and Western biological science into respectful dialogue, using both together to develop a fuller understanding of the topic.",
-      "details": "Consider what each knowledge system reveals, where their insights meet or differ, and how learning from both could inform action. Use Indigenous-authored or community-grounded sources wherever possible, keep knowledge connected to its people and place, and respect community protocols and restrictions. Indigenous Knowledge is not a generic perspective, an add-on, or data to be extracted."
+      "details": "Consider what each knowledge system reveals, where their insights meet or differ, and how learning from both could inform action. Use Indigenous-authored or community-grounded sources wherever possible, keep knowledge connected to its people and place, and respect community protocols and restrictions.",
+      "video": {
+        "label": "Etuaptmumk with Elder Dr. Albert Marshall",
+        "url": "https://www.youtube.com/watch?v=pJcjf1nUckc"
+      }
     },
     {
       "id": "toronto-zoo",
-      "title": "Toronto Zoo: Comparative Organismal Biology",
+      "title": "Toronto Zoo: comparative organismal biology",
       "shortTitle": "Toronto Zoo",
       "description": "Examine the topic by comparing at least three distinct plant and/or animal groups.",
-      "details": "Explain how differences and similarities in anatomy, physiology, behaviour, ecology, evolutionary history, or relationships with people shape the patterns you find. Toronto Zoo organisms and conservation programs may provide useful cases, but the topic does not have to be limited to zoo husbandry."
+      "details": "Ask how differences and similarities in anatomy, physiology, behaviour, ecology, evolutionary history, or relationships with people shape the patterns you find. Toronto Zoo organisms and conservation programs may provide useful cases, but the topic does not have to be limited to zoo husbandry.",
+      "video": {
+        "label": "Why we need zoos — Dr. Gabriela Mastromonaco",
+        "url": "https://www.youtube.com/watch?v=VGBzwnTW-O4"
+      }
     },
     {
       "id": "subdisciplines",
-      "title": "Integrative Biological Subdisciplines",
-      "shortTitle": "Biological Subdisciplines",
+      "title": "Biological subdisciplines",
+      "shortTitle": "Biological subdisciplines",
       "description": "Examine the topic through at least three distinct biological subdisciplines.",
-      "details": "Possible subdisciplines include cell biology, molecular biology, genetics, genomics, physiology, development, behaviour, evolution, ecology, and conservation biology. Do more than present three separate summaries: show how the disciplines connect and what becomes clearer when their evidence is synthesized."
+      "details": "Possible subdisciplines include cell biology, molecular biology, genetics, genomics, physiology, development, behaviour, evolution, ecology, and conservation biology. Do more than present three separate summaries: show how the disciplines connect and what becomes clearer when their evidence is synthesized.",
+      "video": {
+        "label": "What is biology? Areas of study",
+        "url": "https://www.youtube.com/watch?v=hKOpJBxXcx4"
+      }
     }
   ],
   "topics": [
@@ -48,12 +60,16 @@
       "description": "Organisms experience temperature, humidity, wind, shade, and water at a local scale. How do microclimates affect biological performance and survival, and how can habitats—wild, urban, agricultural, or managed—support organisms facing unfamiliar or changing conditions?",
       "sources": [
         {
-          "label": "Polar Bears International",
-          "url": "https://polarbearsinternational.org/news-media/articles/polar-bears-in-zoos/"
+          "label": "Methods in Ecology and Evolution",
+          "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14476"
         },
         {
-          "label": "Polar Bears International",
-          "url": "https://polarbearsinternational.org/news-media/articles/how-do-polar-bears-stay-cool/"
+          "label": "University of Copenhagen",
+          "url": "https://researchprofiles.ku.dk/en/publications/microclimate-an-important-part-of-ecology-and-biogeography/"
+        },
+        {
+          "label": "Frontiers of Biogeography",
+          "url": "https://biogeography.pensoft.net/article/164843/"
         }
       ]
     },
@@ -73,10 +89,6 @@
         {
           "label": "NCBI",
           "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6384270/"
-        },
-        {
-          "label": "Science News",
-          "url": "https://www.sciencenews.org/article/parkinsons-disease-gut-microbes-brain-link"
         }
       ]
     },
@@ -120,43 +132,39 @@
     },
     {
       "id": 6,
-      "title": "Dengue, chikungunya, and mosquito-borne disease",
-      "description": "Dengue and chikungunya emerge from interactions among viruses, mosquito vectors, hosts, climate, habitats, and human activity. How can biology at different scales help explain transmission, disease, and prevention?",
+      "title": "Mosquitoes as vectors for disease",
+      "description": "Mosquitoes can transmit viruses, parasites, and other pathogens, but only some species and populations are effective vectors. How do mosquito genetics, immunity, microbiomes, behaviour, host choice, climate, and habitat shape transmission, and how can that biology inform control?",
       "sources": [
         {
-          "label": "ScienceDirect",
-          "url": "https://www.sciencedirect.com/science/article/pii/S1877584517301260?via%3Dihub"
+          "label": "World Health Organization",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases"
         },
         {
-          "label": "NCBI",
-          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6056230/"
+          "label": "PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10771300/"
         },
         {
-          "label": "NCBI",
-          "url": "https://www.ncbi.nlm.nih.gov/pubmed/23637415"
-        },
-        {
-          "label": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2018/07/180724114056.htm"
+          "label": "PLOS Neglected Tropical Diseases",
+          "url": "https://journals.plos.org/plosntds/article?id=10.1371%2Fjournal.pntd.0010768"
         }
       ]
     },
     {
       "id": 7,
-      "title": "Zika and vector-borne disease",
-      "description": "Zika links viral biology, host responses, mosquito ecology, climate, and public health. What determines where Zika can spread, how infection affects different hosts, and which prevention or treatment strategies are most promising?",
+      "title": "Seasonal indicators and ecological forecasting",
+      "description": "Flowering, leaf-out, insect emergence, migration, breeding, and other recurring events can signal seasonal change. How do organisms respond to environmental cues, how can observations be combined across places and scales, and what happens when interacting species respond at different rates?",
       "sources": [
         {
-          "label": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2021/02/210225082429.htm"
+          "label": "Philosophical Transactions B",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2981948/"
         },
         {
-          "label": "Canadian Science Publishing",
-          "url": "https://cdnsciencepub.com/doi/10.1139/cjm-2019-0331"
+          "label": "USA National Phenology Network",
+          "url": "https://www.usanpn.org/data/publications"
         },
         {
-          "label": "NCBI",
-          "url": "https://www.ncbi.nlm.nih.gov/books/NBK430981/"
+          "label": "Journal of Ecology",
+          "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.13897"
         }
       ]
     },
@@ -189,8 +197,12 @@
           "url": "https://www.sciencedaily.com/releases/2020/11/201130113534.htm"
         },
         {
-          "label": "pubs.niaaa.nih.gov",
-          "url": "https://pubs.niaaa.nih.gov/publications/arh25-2/85-93.htm"
+          "label": "National Institute of General Medical Sciences",
+          "url": "https://www.nigms.nih.gov/education/fact-sheets/Pages/circadian-rhythms.aspx"
+        },
+        {
+          "label": "PubMed Central review",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3104765/"
         }
       ]
     },
@@ -235,7 +247,7 @@
     {
       "id": 12,
       "title": "Mercury in biological systems",
-      "description": "Mercury moves through water, soil, food webs, and bodies, creating biological and community consequences across North America. What determines its uptake, transformation, biomagnification, and effects, and what can be learned from affected places—including Grassy Narrows First Nation—about monitoring, responsibility, remediation, and recovery?",
+      "description": "Mercury moves through water, soil, food webs, and bodies. What determines its uptake, chemical transformation, biomagnification, and biological effects, and what approaches can improve monitoring, remediation, and ecosystem recovery?",
       "sources": [
         {
           "label": "ScienceDaily",
@@ -367,7 +379,7 @@
     },
     {
       "id": 19,
-      "title": "Astrobiology - Life Beyond Earth",
+      "title": "Astrobiology: life beyond Earth",
       "description": "While no definitive evidence of extraterrestrial life has been found, research in astrobiology is fueled by discoveries like the potential for liquid water on other planets and the existence of extremophiles, organisms that thrive in harsh conditions on Earth.",
       "sources": [
         {
@@ -415,6 +427,10 @@
         {
           "label": "ScienceDaily",
           "url": "https://www.sciencedaily.com/releases/2019/02/190208115254.htm"
+        },
+        {
+          "label": "PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4923318/"
         }
       ]
     },
@@ -487,6 +503,10 @@
         {
           "label": "Live Science",
           "url": "https://www.livescience.com/32175-can-frogs-survive-being-frozen.html"
+        },
+        {
+          "label": "PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3033474/"
         }
       ]
     },
@@ -540,6 +560,10 @@
         {
           "label": "NCBI",
           "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3996317/"
+        },
+        {
+          "label": "National Center for Complementary and Integrative Health",
+          "url": "https://www.nccih.nih.gov/health/antioxidants-in-depth"
         }
       ]
     },
@@ -555,12 +579,16 @@
         {
           "label": "The Conversation",
           "url": "https://theconversation.com/what-is-bioluminescence-and-how-is-it-used-by-humans-and-in-nature-100472"
+        },
+        {
+          "label": "PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7595829/"
         }
       ]
     },
     {
       "id": 30,
-      "title": "Pathogen virulence - \"Live fast and die young, or go slow and steady?\"",
+      "title": "Pathogen virulence: “Live fast and die young, or go slow and steady?”",
       "description": "Some pathogens are highly damaging to their hosts, spreading very quickly but also killing almost everyone they infect (e.g. Ebola). Others are equally lethal, but may go without symptoms for years (e.g. HIV/AIDS). Yet others are more benign, and may only mildly or temporarily damage their hosts, only killing ones that are already weak (e.g. the Flu). From a parasite's (evolutionary) perspective, there seem to be pros and cons to all strategies: A parasite essentially uses hosts as a resource to ensure it completes its life cycle and spreads its offspring. But if it causes too much damage and kills the host too quickly, it may not get a chance to do so.",
       "sources": [
         {
@@ -598,8 +626,8 @@
     },
     {
       "id": 32,
-      "title": "The \"landscape of fear\"",
-      "description": "Imagine you are one of our ancestors, living somewhere on the African savannah. You need to gather food, but you also share the ecosystem with all sorts of predators that will eat you in an instant. You will probably avoid areas that you know are frequented by predators, but that may make you less efficient when searching for food. Most animals face this conundrum every day. They form mental maps of where to go and what to avoid, the \"landscape of fear\". Getting an idea of what this landscape looks like can help ecologists understand the effect of conservation measures.",
+      "title": "The landscape of fear",
+      "description": "Animals often trade access to food, mates, or shelter against the risk of encountering predators. How do these perceived risks shape movement, physiology, behaviour, species interactions, and ecosystem processes, and how can ecologists map or test a landscape of fear?",
       "sources": [
         {
           "label": "The Atlantic",
@@ -621,7 +649,7 @@
       "description": "For millions of years, ecosystems have relied on fire to replenish soils and stimulate plant growth, a practice historically managed through controlled, low-intensity burning by various groups. How does the biodiversity and resilience of forests maintained by controlled burns compare to forests shaped by decades of modern systemic fire suppression?",
       "sources": [
         {
-          "label": "Frontiers",
+          "label": "Frontiers for Young Minds",
           "url": "https://kids.frontiersin.org/articles/10.3389/frym.2022.734864"
         },
         {
@@ -629,8 +657,8 @@
           "url": "https://www.nature.com/articles/d41586-020-00043-2"
         },
         {
-          "label": "Scientific American",
-          "url": "https://www.scientificamerican.com/article/how-wildfires-can-actually-help-the-environment/"
+          "label": "US Forest Service Research",
+          "url": "https://research.fs.usda.gov/rmrs/fire/prescribed"
         }
       ]
     },
@@ -684,12 +712,16 @@
         {
           "label": "ScienceDirect",
           "url": "https://www.sciencedirect.com/science/article/abs/pii/S0169534706003818"
+        },
+        {
+          "label": "Nature Education",
+          "url": "https://www.nature.com/scitable/knowledge/library/allee-effects-19699394/"
         }
       ]
     },
     {
       "id": 37,
-      "title": "The theory of autumn colors",
+      "title": "The theory of autumn colours",
       "description": "At some point in your life, you have probably learned that the brilliant autumn displays of color are simply a byproduct of chlorophyll breaking down in preparation for the winter. An alternative, or complementary, hypothesis is that autumn colors function as an active and honest signal of a tree's defensive abilities against parasites. Trees invest in being colorful.",
       "sources": [
         {
@@ -709,42 +741,38 @@
     {
       "id": 38,
       "title": "Transmissible cancers and disease evolution",
-      "description": "Rare cancers can pass between individuals and behave like infectious lineages. What makes transmissible cancer possible, how do hosts and tumours coevolve, and what are the consequences for cells, individuals, populations, and conservation? Tasmanian devil facial tumour disease is a key case study.",
+      "description": "Rare cancers can pass between individuals as living cell lineages. What makes transmission and immune escape possible, how do hosts and tumours coevolve, and what are the consequences for populations? Compare cases in dogs, Tasmanian devils, bivalves, and the recently documented transmissible melanoma of brown bullhead catfish.",
       "sources": [
         {
-          "label": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2020/08/200806101750.htm"
-        },
-        {
-          "label": "NCBI",
+          "label": "PubMed Central review",
           "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7345153/"
         },
         {
-          "label": "The Scientist",
-          "url": "https://www.the-scientist.com/news-opinion/deadly-facial-tumors-spur-tasmanian-devil-evolution-study-68899"
+          "label": "University of Cambridge",
+          "url": "https://www.tcg.vet.cam.ac.uk/publications"
+        },
+        {
+          "label": "Nature — brown bullhead melanoma",
+          "url": "https://www.nature.com/articles/s41586-026-10828-6"
         }
       ]
     },
     {
       "id": 39,
-      "title": "Climate change and malaria",
-      "description": "Temperature affects malaria transmission in multiple ways. For example, warmer temperatures increase the development rates of the malaria parasite and its mosquito vector, suggesting that warmer temperatures could lead to more disease occurrence in humans. On the other hand, warmer temperatures also tend to increase the mortality rates of both the parasite and mosquitoes, which would suggest that warmer temperatures would lead to less disease in humans. Understanding how malaria incidence will change with a warmer climate is a non-trivial but highly relevant problem for proactive health planning.",
+      "title": "Climate change and the shifting geography of disease",
+      "description": "Changing temperature, rainfall, seasonality, and extreme weather can alter the ranges and timing of hosts, vectors, and pathogens. How might these changes reshape diseases such as malaria, dengue, Lyme disease, or wildlife infections, and why do land use, behaviour, surveillance, and health systems also matter?",
       "sources": [
         {
-          "label": "Wiley",
-          "url": "https://onlinelibrary.wiley.com/doi/10.1890/08-0079.1"
+          "label": "Annals of the New York Academy of Sciences",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6378404/"
         },
         {
-          "label": "NCBI",
-          "url": "https://www.ncbi.nlm.nih.gov/pubmed/23908230"
+          "label": "Parasites & Vectors",
+          "url": "https://parasitesandvectors.biomedcentral.com/articles/10.1186/1756-3305-6-1"
         },
         {
-          "label": "Wiley",
-          "url": "https://onlinelibrary.wiley.com/doi/10.1111/ele.12015"
-        },
-        {
-          "label": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2021/07/210707185332.htm"
+          "label": "World Health Organization",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases"
         }
       ]
     },
@@ -758,8 +786,12 @@
           "url": "https://www.theguardian.com/environment/2016/feb/02/ships-noise-is-serious-problem-for-killer-whales-and-dolphins-report-finds"
         },
         {
-          "label": "Dalhousie University",
-          "url": "https://whitelab.biology.dal.ca/lw/publications/Weilgart%202007%20CJZ%20noise%20review.pdf"
+          "label": "Science",
+          "url": "https://www.science.org/doi/10.1126/science.aba4658"
+        },
+        {
+          "label": "NOAA",
+          "url": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-noise"
         }
       ]
     },
@@ -794,21 +826,29 @@
         {
           "label": "ScienceDaily",
           "url": "https://www.sciencedaily.com/releases/2021/04/210429133929.htm"
+        },
+        {
+          "label": "World Health Organization",
+          "url": "https://www.who.int/publications/i/item/9789241516198"
         }
       ]
     },
     {
       "id": 43,
-      "title": "Climate change and Lyme disease",
-      "description": "Lyme-disease is caused by the bacterium Borrelia burgdorferi and is transmitted by ticks. A warming climate is creating increasingly suitable conditions for the disease to establish in northern areas where it previously did not occur. Lyme disease cases have been on the rise in Canada, creating new challenges for public health surveillance, disease control, and public health management. Disease control is difficult, however, due to the multiple interacting ecological factors that drive the disease dynamics.",
+      "title": "Tracking animal movement",
+      "description": "GPS tags, radio telemetry, accelerometers, camera traps, acoustic arrays, stable isotopes, and community observations can reveal where and how animals move. What can different methods measure across species and scales, what biases or welfare costs do they introduce, and how should movement data guide conservation?",
       "sources": [
         {
-          "label": "parasitesandvectors.biomedcentral.com",
-          "url": "https://parasitesandvectors.biomedcentral.com/articles/10.1186/1756-3305-6-1"
+          "label": "Methods in Ecology and Evolution",
+          "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13767"
         },
         {
-          "label": "CMAJ",
-          "url": "https://www.cmaj.ca/content/180/12/1221"
+          "label": "Movebank",
+          "url": "https://www.movebank.org/cms/movebank-content/about-movebank"
+        },
+        {
+          "label": "Global Biodiversity Information Facility",
+          "url": "https://www.gbif.org/news/2djCgxEiwLOLUF4E4KViPP/animals-in-motion-enabling-data-sharing-from-movebank"
         }
       ]
     },
@@ -843,6 +883,10 @@
         {
           "label": "Canadian Red Cross",
           "url": "https://www.redcross.ca/how-we-help/current-emergency-responses/democratic-republic-of-congo-ebola-outbreak-2026"
+        },
+        {
+          "label": "World Health Organization",
+          "url": "https://www.who.int/health-topics/ebola"
         }
       ]
     },
@@ -856,27 +900,31 @@
           "url": "https://www.sciencedaily.com/releases/2017/05/170516091141.htm"
         },
         {
-          "label": "NCBI",
+          "label": "PubMed Central review",
           "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7521350/"
+        },
+        {
+          "label": "Frontiers in Mammal Science",
+          "url": "https://www.frontiersin.org/journals/mammal-science/articles/10.3389/fmamm.2023.1281030/full"
         }
       ]
     },
     {
       "id": 47,
-      "title": "Medicinal plants, knowledge, and biological activity",
-      "description": "People have long developed place-based knowledge about plants used for health and healing. How do plant chemistry, physiology, ecology, cultivation, and relationships with knowledgeable communities shape biological activity and responsible research? Projects involving Indigenous Knowledge must use appropriate sources and respect community ownership and protocols.",
+      "title": "Medicinal plants and biological activity",
+      "description": "Plants produce diverse compounds that can affect cells, microbes, parasites, and whole organisms. How do plant chemistry, physiology, ecology, cultivation, dose, and preparation shape biological activity, and how can promising effects be tested safely and responsibly?",
       "sources": [
         {
           "label": "PubMed Central",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3316145/"
         },
         {
-          "label": "Smithsonian Magazine",
-          "url": "https://www.smithsonianmag.com/science-nature/how-indigenous-knowledge-is-transforming-botany-180976543/"
+          "label": "NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK92773/"
         },
         {
-          "label": "CBC",
-          "url": "https://www.cbc.ca/news/indigenous/traditional-medicine-science-health-1.5432198"
+          "label": "Royal Botanic Gardens, Kew",
+          "url": "https://www.kew.org/science/our-science/science-services/medicinal-plant-names-services"
         }
       ]
     },
@@ -987,6 +1035,10 @@
         {
           "label": "ScienceDaily",
           "url": "https://www.sciencedaily.com/releases/2021/10/211015111210.htm"
+        },
+        {
+          "label": "UNSCEAR",
+          "url": "https://www.unscear.org/unscear/en/areas-of-work/chernobyl.html"
         }
       ]
     },
@@ -1002,12 +1054,16 @@
         {
           "label": "The Conversation",
           "url": "https://theconversation.com/nature-can-heal-itself-after-an-oil-spill-it-just-needs-a-little-help-98054"
+        },
+        {
+          "label": "NOAA Office of Response and Restoration",
+          "url": "https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills"
         }
       ]
     },
     {
       "id": 55,
-      "title": "The role of artificial intelligence (Al) in unraveling the secrets of biology",
+      "title": "The role of artificial intelligence (AI) in biology",
       "description": "While many undergraduate students have come to think of Al as \"that thing my prof and TA told me I better not be using for my assignments\", many scientists are curious about how Al might have a beneficial role to play in biological research, conservation, medicine, etc. Others are worried that Al may hamper scientific progress or unleash unpredictable disasters.",
       "sources": [
         {
@@ -1030,16 +1086,16 @@
       "description": "Diet involves nutrients, toxins, physical processing, foraging behaviour, microbes, seasonal availability, and cultural or management decisions. How can nutritional ecology guide diets for organisms in human care while accounting for species differences and natural feeding biology?",
       "sources": [
         {
-          "label": "Spesfeed",
-          "url": "https://spesfeed.com/2014/04/the-nutritionists-role-in-the-management-and-care-of-captive-wild-animals/"
+          "label": "Journal of Zoo and Aquarium Research",
+          "url": "https://jzar.org/jzar/article/view/786"
         },
         {
-          "label": "The Atlantic",
-          "url": "https://www.theatlantic.com/science/archive/2018/01/zoo-diets/551543/"
+          "label": "Smithsonian’s National Zoo",
+          "url": "https://nationalzoo.si.edu/animals/animal-nutrition-science"
         },
         {
-          "label": "National Geographic",
-          "url": "https://www.nationalgeographic.com/animals/article/what-do-zoo-animals-eat"
+          "label": "Merck Veterinary Manual",
+          "url": "https://www.merckvetmanual.com/management-and-nutrition/nutrition-exotic-and-zoo-animals/overview-of-nutrition-exotic-and-zoo-animals"
         }
       ]
     },
@@ -1059,10 +1115,6 @@
         {
           "label": "Psychedelic Spotlight",
           "url": "https://psychedelicspotlight.com/animals-that-eat-psychedelics-trip/"
-        },
-        {
-          "label": "Australian Geographic",
-          "url": "https://www.australiangeographic.com.au/topics/wildlife/2011/10/animals-getting-high-10-common-drunks/"
         }
       ]
     },
@@ -1082,10 +1134,6 @@
         {
           "label": "University of Michigan",
           "url": "https://news.umich.edu/study-suggests-ground-dwelling-mammals-survived-mass-extinction-66-million-years-ago/"
-        },
-        {
-          "label": "Scientific American",
-          "url": "https://www.scientificamerican.com/article/ability-to-take-on-diverse-roles-may-be-key-to-which-animals-survive-mass-extinction/"
         }
       ]
     },
@@ -1129,8 +1177,8 @@
     }
   ],
   "quiz": {
-    "title": "Assemble Your BIOB90 Team",
-    "intro": "Plan a weekend getaway and discover the Avenger whose teamwork style most closely resembles yours. There are no better or worse results: the purpose is to help assemble groups with complementary approaches.",
+    "title": "Discover your Avengers teamwork style",
+    "intro": "This informal activity uses the four Jung preference pairs—extraversion or introversion, sensing or intuition, thinking or feeling, and judging or perceiving—to start a conversation about how you work with others. It is not a personality assessment and there is no best result.",
     "traits": [
       {
         "id": "coordinator",
@@ -1162,8 +1210,9 @@
       {
         "id": "captain-america",
         "name": "Captain America",
+        "jungType": "ISFJ",
         "tagline": "The dependable coordinator",
-        "description": "You help a team establish a plan, divide responsibilities fairly, and keep its commitments.",
+        "description": "You bring reliability, clear standards, and concern for the people affected by a decision.",
         "watchOut": "Leave room for the plan to change when a teammate finds a better route.",
         "profile": {
           "coordinator": 4,
@@ -1174,11 +1223,27 @@
         }
       },
       {
+        "id": "spider-man",
+        "name": "Spider-Man",
+        "jungType": "ENFP",
+        "tagline": "The curious connector",
+        "description": "You learn quickly, make energetic connections, and want your work to help other people.",
+        "watchOut": "Choose priorities deliberately so enthusiasm does not become overcommitment.",
+        "profile": {
+          "coordinator": 1,
+          "analyst": 1,
+          "innovator": 3,
+          "connector": 3,
+          "adapter": 2
+        }
+      },
+      {
         "id": "iron-man",
         "name": "Iron Man",
+        "jungType": "ENTP",
         "tagline": "The inventive problem-solver",
         "description": "You bring ambitious ideas, technical curiosity, and a willingness to test unconventional solutions.",
-        "watchOut": "Make sure the whole team understands and owns the idea before racing ahead.",
+        "watchOut": "Make sure the whole team understands and owns an idea before racing ahead.",
         "profile": {
           "coordinator": 1,
           "analyst": 3,
@@ -1188,38 +1253,26 @@
         }
       },
       {
-        "id": "black-widow",
-        "name": "Black Widow",
-        "tagline": "The observant adapter",
-        "description": "You read situations carefully, notice what others miss, and adjust without losing sight of the objective.",
-        "watchOut": "Share your observations early rather than quietly carrying too much yourself.",
-        "profile": {
-          "coordinator": 1,
-          "analyst": 3,
-          "innovator": 1,
-          "connector": 1,
-          "adapter": 4
-        }
-      },
-      {
-        "id": "thor",
-        "name": "Thor",
-        "tagline": "The energizing teammate",
-        "description": "You bring optimism, warmth, and momentum that can help a group persist through demanding work.",
-        "watchOut": "Pair enthusiasm with enough detail to turn a bold direction into a workable plan.",
+        "id": "scarlet-witch",
+        "name": "Scarlet Witch",
+        "jungType": "INFP",
+        "tagline": "The values-led creator",
+        "description": "You bring imagination, emotional insight, and a strong sense of what matters beneath the surface.",
+        "watchOut": "Make your reasoning visible so teammates can act on insights that may feel intuitive to you.",
         "profile": {
           "coordinator": 1,
           "analyst": 1,
-          "innovator": 1,
-          "connector": 4,
-          "adapter": 3
+          "innovator": 4,
+          "connector": 2,
+          "adapter": 2
         }
       },
       {
-        "id": "bruce-banner",
-        "name": "Bruce Banner",
+        "id": "hulk",
+        "name": "Hulk / Bruce Banner",
+        "jungType": "INTP",
         "tagline": "The deep analyst",
-        "description": "You dig beneath the surface, interrogate evidence, and help the group avoid conclusions that the data cannot support.",
+        "description": "You dig beneath the surface, interrogate evidence, and help the group avoid conclusions the data cannot support.",
         "watchOut": "Do not wait for perfect certainty before sharing a useful provisional conclusion.",
         "profile": {
           "coordinator": 1,
@@ -1230,38 +1283,71 @@
         }
       },
       {
-        "id": "spider-man",
-        "name": "Spider-Man",
-        "tagline": "The curious all-rounder",
-        "description": "You learn quickly, connect ideas playfully, and can move among different tasks as the team needs you.",
-        "watchOut": "Choose priorities deliberately so versatility does not become overcommitment.",
+        "id": "hawkeye",
+        "name": "Hawkeye",
+        "jungType": "ISTJ",
+        "tagline": "The steady specialist",
+        "description": "You bring preparation, practical judgment, and loyalty when a group needs dependable follow-through.",
+        "watchOut": "Invite unfamiliar possibilities before defaulting to the safest proven route.",
+        "profile": {
+          "coordinator": 3,
+          "analyst": 3,
+          "innovator": 1,
+          "connector": 2,
+          "adapter": 1
+        }
+      },
+      {
+        "id": "ant-man",
+        "name": "Ant-Man",
+        "jungType": "ESFJ",
+        "tagline": "The adaptable energizer",
+        "description": "You bring spontaneity, humour, and a willingness to act when a group needs momentum.",
+        "watchOut": "Protect enough structure and focus to carry an exciting start through to completion.",
         "profile": {
           "coordinator": 1,
           "analyst": 1,
-          "innovator": 3,
-          "connector": 2,
-          "adapter": 3
+          "innovator": 2,
+          "connector": 3,
+          "adapter": 4
         }
       },
       {
         "id": "captain-marvel",
         "name": "Captain Marvel",
+        "jungType": "ISFP",
         "tagline": "The decisive stabilizer",
         "description": "You are comfortable taking responsibility and moving the group forward when the path is uncertain.",
         "watchOut": "Invite quieter teammates into the decision before taking the lead.",
         "profile": {
-          "coordinator": 3,
+          "coordinator": 4,
           "analyst": 2,
           "innovator": 1,
           "connector": 1,
-          "adapter": 3
+          "adapter": 2
+        }
+      },
+      {
+        "id": "vision",
+        "name": "Vision",
+        "jungType": "ISTJ",
+        "tagline": "The calm strategist",
+        "description": "You bring systems thinking, independence, and a calm focus on the long-term objective.",
+        "watchOut": "Check that an elegant strategy also reflects the team’s practical and interpersonal needs.",
+        "profile": {
+          "coordinator": 2,
+          "analyst": 4,
+          "innovator": 2,
+          "connector": 1,
+          "adapter": 1
         }
       },
       {
         "id": "black-panther",
         "name": "Black Panther",
+        "jungType": "INTJ",
         "tagline": "The strategic collaborator",
-        "description": "You combine careful judgment, long-range thinking, and respect for the perspectives around the table.",
+        "description": "You combine long-range thinking, careful judgment, and respect for the perspectives around the table.",
         "watchOut": "Translate strategy into early concrete actions so the group can build momentum.",
         "profile": {
           "coordinator": 3,
