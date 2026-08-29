@@ -44,12 +44,17 @@ test('student workflow autosaves, submits, persists, recovers, and exports CSV',
 
   const content = await fetch(`${baseUrl}/api/content`).then((response) => response.json());
   assert.equal(content.topics.length, 60);
+  assert.ok(content.topics.every((topic) => topic.sources.length === 3));
+  assert.ok(content.topics.every((topic) => !/indigenous/i.test(topic.description)));
   assert.equal(content.streams.length, 3);
+  assert.ok(content.streams.every((stream) => stream.video?.url.includes('youtube.com')));
   assert.equal(content.quiz.questions.length, 10);
+  assert.equal(content.quiz.outcomes.length, 10);
+  assert.ok(content.quiz.outcomes.every((outcome) => /^[EISNTFJP]{4}$/.test(outcome.jungType)));
 
   const start = await fetch(`${baseUrl}/api/student/start`, {
     method: 'POST', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name: 'Test Student', studentNumber: '1000123456' })
+    body: JSON.stringify({ name: 'Test Student', studentNumberLast4: '3456' })
   });
   assert.equal(start.status, 200);
   const studentCookie = start.headers.get('set-cookie').split(';')[0];
@@ -79,7 +84,7 @@ test('student workflow autosaves, submits, persists, recovers, and exports CSV',
 
   const recovery = await fetch(`${baseUrl}/api/student/start`, {
     method: 'POST', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name: 'Test Student', studentNumber: '1000123456' })
+    body: JSON.stringify({ name: 'Test Student', studentNumberLast4: '3456' })
   });
   assert.equal(recovery.status, 200);
   assert.equal((await recovery.json()).recovered, true);
@@ -92,6 +97,14 @@ test('student workflow autosaves, submits, persists, recovers, and exports CSV',
   const csv = await fetch(`${baseUrl}/api/admin/submissions.csv`, { headers: { Cookie: adminCookie } });
   assert.equal(csv.status, 200);
   const csvText = await csv.text();
-  assert.match(csvText, /Test Student,1000123456,Submitted/);
-  assert.match(csvText, /Captain America|Iron Man|Black Widow|Thor|Bruce Banner|Spider-Man|Captain Marvel|Black Panther/);
+  assert.match(csvText, /Test Student,3456,Submitted/);
+  assert.match(csvText, /Captain America|Spider-Man|Iron Man|Scarlet Witch|Hulk \/ Bruce Banner|Hawkeye|Ant-Man|Captain Marvel|Vision/);
+
+  const reset = await fetch(`${baseUrl}/api/admin/reset`, {
+    method: 'POST', headers: { 'Content-Type': 'application/json', Cookie: adminCookie }, body: JSON.stringify({ confirmation: 'RESET' })
+  });
+  assert.equal(reset.status, 200);
+  assert.equal((await reset.json()).removed, 1);
+  const summary = await fetch(`${baseUrl}/api/admin/summary`, { headers: { Cookie: adminCookie } }).then((response) => response.json());
+  assert.equal(summary.total, 0);
 });
