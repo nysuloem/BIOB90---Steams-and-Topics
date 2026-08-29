@@ -1388,15 +1388,6 @@
             }
           },
           {
-            "id": "one-friend",
-            "label": "One trusted friend; a smaller trip is easier to plan and enjoy",
-            "scores": {
-              "analyst": 2,
-              "coordinator": 1,
-              "connector": 1
-            }
-          },
-          {
             "id": "open-invite",
             "label": "Whoever is excited and available at the last minute",
             "scores": {
