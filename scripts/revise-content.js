@@ -11,8 +11,8 @@ content.streams = [
     id: 'two-eyed-seeing',
     title: 'Two-Eyed Seeing (Etuaptmumk)',
     shortTitle: 'Two-Eyed Seeing',
-    description: 'Bring the strengths of Indigenous ways of knowing and Western biological science into respectful dialogue, using both together to develop a fuller understanding of the topic.',
-    details: 'Consider what each knowledge system reveals, where their insights meet or differ, and how learning from both could inform action. Use Indigenous-authored or community-grounded sources wherever possible, keep knowledge connected to its people and place, and respect community protocols and restrictions.',
+    description: 'Investigate your topic by searching for relevant work by both Indigenous scholars and non-Indigenous researchers. Compare the questions they ask, the evidence and knowledge they draw upon, and the ways they interpret the topic. Look for common threads, important differences, and connections that can lead to a fuller or novel insight.',
+    details: 'Use publicly available Indigenous-authored or community-grounded sources wherever possible, keep knowledge connected to its people and place, and respect community protocols and restrictions. Unless you are Indigenous yourself or already have an established relationship with an Indigenous community, you should not contact Indigenous communities or knowledge holders for this project.',
     videos: [
       { label: 'Short introduction: Two-Eyed Seeing in ecological research (5 min)', url: 'https://www.youtube.com/watch?v=3LI9roIYyhE' },
       { label: 'Deeper exploration with Elder Dr. Albert Marshall', url: 'https://www.youtube.com/watch?v=pJcjf1nUckc' }
@@ -22,8 +22,8 @@ content.streams = [
     id: 'toronto-zoo',
     title: 'Toronto Zoo: comparative biology',
     shortTitle: 'Toronto Zoo',
-    description: 'Compare at least three distinct plant and/or animal groups to investigate how different species meet common biological needs and respond to their environments. Similarities can reveal shared principles; differences can reveal constraints, trade-offs, and remarkable solutions.',
-    details: 'Comparative biology uses the diversity of life to uncover general principles and understand how different species have evolved distinct solutions. The Krogh principle begins with a biological question and seeks an organism especially well suited to reveal the answer. The inverse Krogh principle begins with an organism and asks what questions its distinctive biology inspires. These approaches are complementary. Ask what becomes visible only when species are placed side by side. Toronto Zoo species and conservation programs may provide useful cases.',
+    description: 'Choose three distinct plant and/or animal groups and find scientific papers that examine your topic in relation to each group. Compare the evidence across the three groups, looking for common threads as well as meaningful differences that can lead to a novel insight into your topic.',
+    details: 'Your comparison might reveal a shared biological principle, different solutions to the same challenge, or important constraints and trade-offs. The Krogh principle begins with a biological question and seeks an organism especially well suited to reveal the answer. The inverse Krogh principle begins with an organism and asks what questions its distinctive biology inspires. Toronto Zoo species and conservation programs may provide useful cases.',
     videos: [
       { type: 'Read', label: 'The inverse Krogh principle: All organisms are worthy of study', url: 'https://www.journals.uchicago.edu/doi/full/10.1086/721620' },
       { type: 'Watch', label: 'Comparative thinking in biology — Adrian Currie', url: 'https://www.youtube.com/watch?v=AfiyJ_kCLR8' }
@@ -33,8 +33,8 @@ content.streams = [
     id: 'subdisciplines',
     title: 'Biological subdisciplines',
     shortTitle: 'Biological subdisciplines',
-    description: 'Examine the topic at the interfaces of at least three biological subdisciplines. Although areas such as physiology, cell biology, genetics, development, evolution, ecology, and biochemistry are often taught separately, their boundaries are largely historical and biological questions routinely cross them.',
-    details: 'Bring evidence and ideas from the disciplines together to develop an explanation, hypothesis, or insight that no single discipline would produce alone. Fields such as evolutionary ecology, neurophysiology, and developmental biochemistry show how working between established areas can open new questions and push the boundaries of knowledge.',
+    description: 'Choose three biological subdisciplines from cell biology, genetics, ecology, physiology, biochemistry, evolution, neurobiology, development, and molecular biology. Find scientific papers that investigate your topic in journals related to each of your chosen subdisciplines.',
+    details: 'Compare the questions, evidence, and explanations found across the three subdisciplines. Look for common threads and connections that allow you to develop a novel insight into your topic—one that would be difficult to reach from any single subdiscipline alone.',
     videos: [
       { label: 'Why researchers work across disciplines', url: 'https://www.youtube.com/watch?v=yyf0uTz0fFk' },
       { label: 'Case study: fossils and genetics explain the evolution of limbs (26:06)', url: 'https://www.ibiology.org/evolution/hox-genes/' }
