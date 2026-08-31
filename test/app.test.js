@@ -50,8 +50,11 @@ test('student workflow autosaves, submits, persists, recovers, and exports CSV',
   assert.ok(content.streams.every((stream) => stream.videos?.length >= 1));
   assert.ok(content.streams.flatMap((stream) => stream.videos).every((video) => /^https:\/\//.test(video.url)));
   assert.equal(content.streams[0].videos.length, 2);
+  assert.match(content.streams[0].description, /Indigenous scholars and non-Indigenous researchers/);
+  assert.match(content.streams[0].details, /should not contact Indigenous communities or knowledge holders/);
   assert.equal(content.streams[1].title, 'Toronto Zoo: comparative biology');
   assert.equal(content.streams[1].videos.length, 2);
+  assert.match(content.streams[1].description, /Choose three distinct plant and\/or animal groups/);
   assert.ok(!content.streams[1].videos.some((video) => video.url.includes('pcom.edu')));
   assert.ok(!content.streams[1].videos.some((video) => video.url.includes('lo6MzE09xm0')));
   assert.ok(content.streams[1].details.includes('Krogh principle'));
@@ -60,6 +63,7 @@ test('student workflow autosaves, submits, persists, recovers, and exports CSV',
   assert.equal(content.streams[1].videos[0].url, 'https://www.journals.uchicago.edu/doi/full/10.1086/721620');
   assert.equal(content.streams[1].videos[1].url, 'https://www.youtube.com/watch?v=AfiyJ_kCLR8');
   assert.equal(content.streams[2].videos.length, 2);
+  assert.match(content.streams[2].description, /cell biology, genetics, ecology, physiology, biochemistry, evolution, neurobiology, development, and molecular biology/);
   assert.equal(content.quiz.questions.length, 10);
   assert.equal(content.quiz.questions[0].id, 'companions');
   assert.ok(content.quiz.questions[0].options.some((option) => option.id === 'family'));
