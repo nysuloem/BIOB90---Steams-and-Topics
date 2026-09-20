@@ -81,6 +81,12 @@ test('student workflow autosaves, submits, persists, recovers, and exports CSV',
   const studentCookie = start.headers.get('set-cookie').split(';')[0];
   assert.equal((await start.json()).recovered, false);
 
+  const incompleteLookup = await fetch(`${baseUrl}/api/student/avenger`, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: 'Test Student', studentNumberLast4: '3456' })
+  });
+  assert.equal(incompleteLookup.status, 409);
+
   const quizAnswers = Object.fromEntries(content.quiz.questions.map((question) => [question.id, question.options[0].id]));
   const patch = await fetch(`${baseUrl}/api/student`, {
     method: 'PATCH', headers: { 'Content-Type': 'application/json', Cookie: studentCookie },
@@ -94,6 +100,19 @@ test('student workflow autosaves, submits, persists, recovers, and exports CSV',
   assert.equal(patch.status, 200);
   const patched = await patch.json();
   assert.ok(patched.record.avengerResult);
+
+  const avengerLookup = await fetch(`${baseUrl}/api/student/avenger`, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: 'Test Student', studentNumberLast4: '3456' })
+  });
+  assert.equal(avengerLookup.status, 200);
+  assert.equal((await avengerLookup.json()).avengerResult, patched.record.avengerResult);
+
+  const missingLookup = await fetch(`${baseUrl}/api/student/avenger`, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: 'Not A Student', studentNumberLast4: '9999' })
+  });
+  assert.equal(missingLookup.status, 404);
 
   const submit = await fetch(`${baseUrl}/api/student/submit`, { method: 'POST', headers: { Cookie: studentCookie } });
   assert.equal(submit.status, 200);

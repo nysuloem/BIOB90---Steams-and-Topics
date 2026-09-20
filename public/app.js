@@ -6,6 +6,8 @@ const notice = document.querySelector('#notice');
 const saveStatus = document.querySelector('#save-status');
 const instructorDialog = document.querySelector('#instructor-dialog');
 const instructorContent = document.querySelector('#instructor-content');
+const avengerDialog = document.querySelector('#avenger-dialog');
+const avengerContent = document.querySelector('#avenger-content');
 
 let content = null;
 let record = null;
@@ -266,12 +268,18 @@ function renderTopics() {
   });
 }
 
+function avengerResultHtml(resultId, traitScores, showTraits = true) {
+  const outcome = content.quiz.outcomes.find((item) => item.id === resultId);
+  if (!outcome) return '';
+  const scores = traitScores || {};
+  const maximum = Math.max(...Object.values(scores), 1);
+  const traits = showTraits ? `<div class="trait-bars">${content.quiz.traits.map((trait) => { const value = scores[trait.id] || 0; return `<div class="trait-row"><span>${escapeHtml(trait.name)}</span><span class="trait-track"><span class="trait-fill" style="width:${Math.round(value / maximum * 100)}%"></span></span><strong>${value}</strong></div>`; }).join('')}</div><p class="hint">The possible results include all nine characters from the referenced BuzzFeed quiz plus Black Panther from the course collaboration slides. The four-letter code is an informal educational interpretation, not a clinical or validated personality result.</p>` : '';
+  return `<article class="result-card"><div class="eyebrow">Your teamwork match</div><h3 class="result-name">${escapeHtml(outcome.name)}</h3><p class="jung-code">Jung-style preference code: <strong>${escapeHtml(outcome.jungType)}</strong></p><strong>${escapeHtml(outcome.tagline)}</strong><p>${escapeHtml(outcome.description)}</p><p class="hint"><strong>Watch-out:</strong> ${escapeHtml(outcome.watchOut)}</p>${traits}</article>`;
+}
+
 function quizResultHtml() {
   if (!record.avengerResult) return '';
-  const outcome = content.quiz.outcomes.find((item) => item.id === record.avengerResult);
-  const maximum = Math.max(...Object.values(record.traitScores), 1);
-  return `<article class="result-card"><div class="eyebrow">Your teamwork match</div><h3 class="result-name">${escapeHtml(outcome.name)}</h3><p class="jung-code">Jung-style preference code: <strong>${escapeHtml(outcome.jungType)}</strong></p><strong>${escapeHtml(outcome.tagline)}</strong><p>${escapeHtml(outcome.description)}</p><p class="hint"><strong>Watch-out:</strong> ${escapeHtml(outcome.watchOut)}</p>
-    <div class="trait-bars">${content.quiz.traits.map((trait) => { const value = record.traitScores[trait.id] || 0; return `<div class="trait-row"><span>${escapeHtml(trait.name)}</span><span class="trait-track"><span class="trait-fill" style="width:${Math.round(value / maximum * 100)}%"></span></span><strong>${value}</strong></div>`; }).join('')}</div><p class="hint">The possible results include all nine characters from the referenced BuzzFeed quiz plus Black Panther from the course collaboration slides. The four-letter code is an informal educational interpretation, not a clinical or validated personality result.</p></article>`;
+  return avengerResultHtml(record.avengerResult, record.traitScores);
 }
 
 function renderQuiz() {
@@ -396,6 +404,57 @@ document.querySelector('#instructor-open').addEventListener('click', () => {
 });
 document.querySelector('.dialog-close').addEventListener('click', () => instructorDialog.close());
 instructorDialog.addEventListener('click', (event) => { if (event.target === instructorDialog) instructorDialog.close(); });
+
+function renderAvengerLookup() {
+  if (record?.avengerResult) {
+    avengerContent.innerHTML = `<h2 id="avenger-dialog-title">Check Your Avenger</h2>${avengerResultHtml(record.avengerResult, record.traitScores, false)}`;
+    return;
+  }
+  if (record) {
+    avengerContent.innerHTML = '<h2 id="avenger-dialog-title">Check Your Avenger</h2><p>Your Avenger will appear here after you finish all ten teamwork questions.</p><button id="avenger-go-to-quiz" class="primary" type="button">Go to the quiz</button>';
+    document.querySelector('#avenger-go-to-quiz').addEventListener('click', () => {
+      step = 1;
+      render();
+      avengerDialog.close();
+      requestAnimationFrame(scrollToPageTop);
+    });
+    return;
+  }
+  avengerContent.innerHTML = `
+    <h2 id="avenger-dialog-title">Check Your Avenger</h2>
+    <p>Enter the same details you used for the survey to see your saved result.</p>
+    <form id="avenger-lookup-form">
+      <div class="field"><label for="avenger-name">Quercus name</label><input id="avenger-name" name="name" type="text" autocomplete="name" maxlength="120" required></div>
+      <div class="field"><label for="avenger-number">Last four digits of your student number</label><input id="avenger-number" name="studentNumberLast4" type="text" inputmode="numeric" autocomplete="off" pattern="[0-9]{4}" minlength="4" maxlength="4" required></div>
+      <button class="primary" type="submit">Show my Avenger</button>
+      <p id="avenger-error" class="error-message" role="alert"></p>
+    </form>`;
+  document.querySelector('#avenger-lookup-form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const error = document.querySelector('#avenger-error');
+    const button = event.currentTarget.querySelector('button');
+    error.textContent = '';
+    button.disabled = true;
+    button.textContent = 'Checking…';
+    try {
+      const values = Object.fromEntries(new FormData(event.currentTarget));
+      const result = await request('/api/student/avenger', { method: 'POST', body: JSON.stringify(values) });
+      avengerContent.innerHTML = `<h2 id="avenger-dialog-title">Check Your Avenger</h2>${avengerResultHtml(result.avengerResult, null, false)}`;
+    } catch (lookupError) {
+      error.textContent = lookupError.message;
+      button.disabled = false;
+      button.textContent = 'Show my Avenger';
+    }
+  });
+}
+
+document.querySelector('#avenger-open').addEventListener('click', () => {
+  if (!content) return;
+  renderAvengerLookup();
+  avengerDialog.showModal();
+});
+avengerDialog.querySelector('.dialog-close').addEventListener('click', () => avengerDialog.close());
+avengerDialog.addEventListener('click', (event) => { if (event.target === avengerDialog) avengerDialog.close(); });
 
 async function init() {
   try {

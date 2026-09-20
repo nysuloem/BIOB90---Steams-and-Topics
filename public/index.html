@@ -13,7 +13,10 @@
       <span class="brand-mark">B90</span>
       <span><strong>BIOB90</strong><small>Tell Us About YOU Survey</small></span>
     </a>
-    <div id="save-status" class="save-status" aria-live="polite"></div>
+    <div class="header-actions">
+      <button id="avenger-open" class="avenger-link" type="button">Check Your Avenger</button>
+      <div id="save-status" class="save-status" aria-live="polite"></div>
+    </div>
   </header>
 
   <main class="shell">
@@ -30,6 +33,11 @@
   <dialog id="instructor-dialog">
     <button class="dialog-close" type="button" aria-label="Close">×</button>
     <div id="instructor-content"></div>
+  </dialog>
+
+  <dialog id="avenger-dialog" aria-labelledby="avenger-dialog-title">
+    <button class="dialog-close" type="button" aria-label="Close">×</button>
+    <div id="avenger-content"></div>
   </dialog>
 
   <script src="/app.js" defer></script>

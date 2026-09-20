@@ -43,6 +43,11 @@ a { color: #7fe8df; }
 .brand strong, .brand small { display: block; }
 .brand strong { letter-spacing: .08em; font-size: .92rem; }
 .brand small { color: var(--muted); font-size: .72rem; }
+.header-actions { display: flex; align-items: center; justify-content: flex-end; gap: 16px; }
+.avenger-link {
+  padding: 9px 13px; color: var(--gold); background: rgba(241,199,91,.08); border: 1px solid rgba(241,199,91,.38);
+  border-radius: 999px; cursor: pointer; font-weight: 800;
+}
 .save-status { min-width: 118px; color: var(--muted); font-size: .82rem; text-align: right; }
 .save-status.saving { color: var(--gold); }
 .save-status.saved { color: var(--success); }
@@ -163,6 +168,9 @@ dialog::backdrop { background: rgba(0,8,16,.76); backdrop-filter: blur(5px); }
   .shell { width: min(100% - 22px, 1120px); padding-top: 24px; }
   .site-header { padding-inline: 14px; }
   .brand small { display: none; }
+  .header-actions { gap: 8px; }
+  .avenger-link { padding: 8px 10px; font-size: .78rem; }
+  .save-status { min-width: 52px; font-size: .72rem; }
   .progress-labels span { text-align: center; font-size: 0; }
   .progress-labels span::before { content: attr(data-short); font-size: .66rem; }
   .rank-selects, .option-grid, .preference-grid, .review-grid { grid-template-columns: 1fr; }
@@ -173,4 +181,8 @@ dialog::backdrop { background: rgba(0,8,16,.76); backdrop-filter: blur(5px); }
   .button-row { align-items: stretch; }
   .button-row .right { margin-left: 0; }
   .button-row button { flex: 1; }
+}
+
+@media (max-width: 520px) {
+  .brand > span:last-child { display: none; }
 }

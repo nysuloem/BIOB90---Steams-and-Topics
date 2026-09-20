@@ -294,6 +294,18 @@ async function api(req, res, url) {
     return json(res, 200, { recovered, record: publicRecord(record) }, { 'Set-Cookie': cookie('biob90_student', token, 60 * 60 * 24 * 30) });
   }
 
+  if (req.method === 'POST' && url.pathname === '/api/student/avenger') {
+    const body = await readJson(req);
+    const name = normalizeName(body.name);
+    const studentNumberLast4 = normalizeStudentNumberLast4(body.studentNumberLast4);
+    if (name.length < 2 || name.length > 120) return json(res, 400, { error: 'Enter your name exactly as it appears on Quercus.' });
+    if (!/^\d{4}$/.test(studentNumberLast4)) return json(res, 400, { error: 'Enter the last four digits of your student number.' });
+    const record = store.get(studentKey(name, studentNumberLast4));
+    if (!record) return json(res, 404, { error: 'No saved survey was found for those details. Check your Quercus name and student number.' });
+    if (!record.avengerResult) return json(res, 409, { error: 'Your Avenger will appear after you finish all ten teamwork questions.' });
+    return json(res, 200, { avengerResult: record.avengerResult });
+  }
+
   if (req.method === 'GET' && url.pathname === '/api/student') {
     const record = studentFromRequest(req);
     return record ? json(res, 200, { record: publicRecord(record) }) : json(res, 401, { error: 'Student session not found.' });
